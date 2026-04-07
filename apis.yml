@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Video Storage
+  - AWS
+  - Content Delivery
   - Live Streaming
   - Media
-  - Content Delivery
-  - AWS
+  - Video Storage
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -28,9 +28,9 @@ apis:
     humanURL: https://aws.amazon.com/mediastore/
     baseURL: https://mediastore.amazonaws.com
     tags:
-      - Video Storage
       - Live Streaming
       - Media
+      - Video Storage
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/mediastore/latest/apireference/Welcome.html
