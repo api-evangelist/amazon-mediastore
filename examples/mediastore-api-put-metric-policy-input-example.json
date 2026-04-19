@@ -1,0 +1,4 @@
+{
+  "ContainerName": "example-resource",
+  "MetricPolicy": "example-value"
+}

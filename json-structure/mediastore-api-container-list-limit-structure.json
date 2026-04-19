@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-container-list-limit-structure.json",
+  "name": "ContainerListLimit",
+  "type": "integer",
+  "description": "ContainerListLimit schema from Amazon MediaStore API",
+  "minimum": 1,
+  "maximum": 100
+}

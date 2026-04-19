@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-time-stamp-structure.json",
+  "name": "TimeStamp",
+  "type": "datetime",
+  "description": "TimeStamp schema from Amazon MediaStore API"
+}

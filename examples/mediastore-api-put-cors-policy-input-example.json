@@ -1,0 +1,4 @@
+{
+  "ContainerName": "example-resource",
+  "CorsPolicy": "example-value"
+}

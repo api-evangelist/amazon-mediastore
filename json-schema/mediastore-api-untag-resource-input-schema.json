@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-untag-resource-input-schema.json",
+  "title": "UntagResourceInput",
+  "description": "UntagResourceInput schema from Amazon MediaStore API",
+  "type": "object",
+  "properties": {
+    "Resource": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) for the container."
+        }
+      ]
+    },
+    "TagKeys": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagKeyList"
+        },
+        {
+          "description": "A comma-separated list of keys for tags that you want to remove from the container. For example, if your container has two tags (customer:CompanyA and priority:High) and you want to remove one of the tags (priority:High), you specify the key for the tag that you want to remove (priority)."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Resource",
+    "TagKeys"
+  ]
+}

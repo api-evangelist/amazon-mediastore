@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-get-container-policy-input-structure.json",
+  "name": "GetContainerPolicyInput",
+  "type": "object",
+  "description": "GetContainerPolicyInput schema from Amazon MediaStore API",
+  "properties": {
+    "ContainerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "ContainerName"
+  ]
+}

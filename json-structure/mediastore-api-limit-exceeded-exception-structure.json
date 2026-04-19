@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-limit-exceeded-exception-structure.json",
+  "name": "LimitExceededException",
+  "description": "LimitExceededException schema from Amazon MediaStore API"
+}

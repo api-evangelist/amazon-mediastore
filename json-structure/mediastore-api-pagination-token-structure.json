@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-pagination-token-structure.json",
+  "name": "PaginationToken",
+  "type": "string",
+  "description": "PaginationToken schema from Amazon MediaStore API",
+  "pattern": "[0-9A-Za-z=/+]+",
+  "minLength": 1,
+  "maxLength": 1024
+}

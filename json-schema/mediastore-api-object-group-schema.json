@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-object-group-schema.json",
+  "title": "ObjectGroup",
+  "description": "ObjectGroup schema from Amazon MediaStore API",
+  "type": "string",
+  "pattern": "/?(?:[A-Za-z0-9_=:\\.\\-\\~\\*]+/){0,10}(?:[A-Za-z0-9_=:\\.\\-\\~\\*]+)?/?",
+  "minLength": 1,
+  "maxLength": 900
+}

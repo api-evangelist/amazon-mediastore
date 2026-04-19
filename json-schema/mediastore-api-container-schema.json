@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-container-schema.json",
+  "title": "Container",
+  "description": "This section describes operations that you can perform on an AWS Elemental MediaStore container.",
+  "type": "object",
+  "properties": {
+    "Endpoint": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Endpoint"
+        },
+        {
+          "description": "The DNS endpoint of the container. Use the endpoint to identify the specific container when sending requests to the data plane. The service assigns this value when the container is created. Once the value has been assigned, it does not change."
+        }
+      ]
+    },
+    "CreationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimeStamp"
+        },
+        {
+          "description": "Unix timestamp."
+        }
+      ]
+    },
+    "ARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerARN"
+        },
+        {
+          "description": "<p>The Amazon Resource Name (ARN) of the container. The ARN has the following format:</p> <p>arn:aws:&lt;region&gt;:&lt;account that owns this container&gt;:container/&lt;name of container&gt; </p> <p>For example: arn:aws:mediastore:us-west-2:111122223333:container/movies </p>"
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerStatus"
+        },
+        {
+          "description": "The status of container creation or deletion. The status is one of the following: <code>CREATING</code>, <code>ACTIVE</code>, or <code>DELETING</code>. While the service is creating the container, the status is <code>CREATING</code>. When the endpoint is available, the status changes to <code>ACTIVE</code>."
+        }
+      ]
+    },
+    "AccessLoggingEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerAccessLoggingEnabled"
+        },
+        {
+          "description": "The state of access logging on the container. This value is <code>false</code> by default, indicating that AWS Elemental MediaStore does not send access logs to Amazon CloudWatch Logs. When you enable access logging on the container, MediaStore changes this value to <code>true</code>, indicating that the service delivers access logs for objects stored in that container to CloudWatch Logs."
+        }
+      ]
+    }
+  }
+}

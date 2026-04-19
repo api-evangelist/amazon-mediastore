@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-container-in-use-exception-structure.json",
+  "name": "ContainerInUseException",
+  "description": "ContainerInUseException schema from Amazon MediaStore API"
+}

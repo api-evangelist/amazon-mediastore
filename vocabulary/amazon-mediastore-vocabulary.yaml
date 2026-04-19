@@ -1,0 +1,383 @@
+vocabulary: 1.0.0
+info:
+  provider: Amazon MediaStore
+  description: Unified vocabulary for Amazon MediaStore APIs and capabilities.
+  created: '2026-04-19'
+  modified: '2026-04-19'
+operational:
+  apis:
+  - name: Amazon MediaStore API
+    namespace: mediastore
+    version: '2018-11-14'
+    baseUrl: http://mediastore.{region}.amazonaws.com
+    status: active
+  resources:
+  - name: '#X-Amz-Target=MediaStore_20170901.CreateContainer'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.DeleteContainer'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.DeleteContainerPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.DeleteCorsPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.DeleteLifecyclePolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.DeleteMetricPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.DescribeContainer'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.GetContainerPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.GetCorsPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.GetLifecyclePolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.GetMetricPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.ListContainers'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.ListTagsForResource'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.PutContainerPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.PutCorsPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.PutLifecyclePolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.PutMetricPolicy'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.StartAccessLogging'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.StopAccessLogging'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.TagResource'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: '#X-Amz-Target=MediaStore_20170901.UntagResource'
+    api: Amazon MediaStore API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  actions:
+  - name: list
+    httpMethod: GET
+    pattern: read
+  - name: get
+    httpMethod: GET
+    pattern: read
+  - name: create
+    httpMethod: POST
+    pattern: write
+  - name: update
+    httpMethod: PUT
+    pattern: write
+  - name: delete
+    httpMethod: DELETE
+    pattern: write
+  schemas:
+    core:
+    - CreateContainerOutput
+    - CreateContainerInput
+    - InternalServerError
+    - DeleteContainerOutput
+    - DeleteContainerInput
+    - DeleteContainerPolicyOutput
+    - DeleteContainerPolicyInput
+    - DeleteCorsPolicyOutput
+    - DeleteCorsPolicyInput
+    - DeleteLifecyclePolicyOutput
+  parameters:
+    pagination:
+    - name: nextToken
+      description: Pagination token
+    - name: maxResults
+      description: Max results per page
+  authentication:
+    schemes:
+    - type: awsSigV4
+      description: AWS Signature Version 4
+capability:
+  workflows:
+  - name: Amazon MediaStore Workflow
+    file: capabilities/amazon-mediastore-media-workflow.yaml
+    description: Amazon MediaStore media processing workflow
+    personas:
+    - Broadcast Engineer
+    - Media Developer
+    domains:
+    - Media Processing
+  personas:
+  - id: broadcast-engineer
+    name: Broadcast Engineer
+    description: Engineer managing broadcast media workflows
+    workflows:
+    - Amazon MediaStore Workflow
+  - id: media-developer
+    name: Media Developer
+    description: Developer building media processing applications
+    workflows:
+    - Amazon MediaStore Workflow
+  domains:
+  - name: Media Processing
+    description: AWS media processing and delivery
+  namespaces:
+  - name: mediastore
+    type: consumed
+  - name: mediastore-workflow-api
+    type: rest
+    port: 8080
+  - name: mediastore-workflow-mcp
+    type: mcp
+    port: 9090
+  binds:
+  - name: AWS_ACCESS_KEY_ID
+  - name: AWS_SECRET_ACCESS_KEY
+crossReference:
+- resource: '#X-Amz-Target=MediaStore_20170901.CreateContainer'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.DeleteContainer'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.DeleteContainerPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.DeleteCorsPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.DeleteLifecyclePolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.DeleteMetricPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.DescribeContainer'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.GetContainerPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.GetCorsPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.GetLifecyclePolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.GetMetricPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.ListContainers'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.ListTagsForResource'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.PutContainerPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.PutCorsPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.PutLifecyclePolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.PutMetricPolicy'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.StartAccessLogging'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.StopAccessLogging'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.TagResource'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer
+- resource: '#X-Amz-Target=MediaStore_20170901.UntagResource'
+  api: Amazon MediaStore API
+  workflows:
+  - Amazon MediaStore Workflow
+  personas:
+  - Broadcast Engineer

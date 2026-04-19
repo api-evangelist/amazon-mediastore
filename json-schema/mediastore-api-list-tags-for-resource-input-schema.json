@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-list-tags-for-resource-input-schema.json",
+  "title": "ListTagsForResourceInput",
+  "description": "ListTagsForResourceInput schema from Amazon MediaStore API",
+  "type": "object",
+  "properties": {
+    "Resource": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) for the container."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Resource"
+  ]
+}

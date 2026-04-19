@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-put-cors-policy-input-structure.json",
+  "name": "PutCorsPolicyInput",
+  "type": "object",
+  "description": "PutCorsPolicyInput schema from Amazon MediaStore API",
+  "properties": {
+    "ContainerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container that you want to assign the CORS policy to."
+        }
+      ]
+    },
+    "CorsPolicy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CorsPolicy"
+        },
+        {
+          "description": "The CORS policy to apply to the container. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "ContainerName",
+    "CorsPolicy"
+  ]
+}

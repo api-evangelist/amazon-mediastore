@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-container-access-logging-enabled-schema.json",
+  "title": "ContainerAccessLoggingEnabled",
+  "description": "ContainerAccessLoggingEnabled schema from Amazon MediaStore API",
+  "type": "boolean"
+}

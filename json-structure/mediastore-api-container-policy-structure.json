@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-container-policy-structure.json",
+  "name": "ContainerPolicy",
+  "type": "string",
+  "description": "ContainerPolicy schema from Amazon MediaStore API",
+  "pattern": "[\\x00-\\x7F]+",
+  "minLength": 1,
+  "maxLength": 8192
+}

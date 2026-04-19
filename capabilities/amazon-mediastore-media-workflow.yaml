@@ -1,0 +1,116 @@
+naftiko: 1.0.0-alpha1
+info:
+  label: Amazon MediaStore Workflow
+  description: Workflow capability for Amazon MediaStore media processing operations for broadcast engineers and media developers.
+  tags:
+  - AWS
+  - Media
+  - Broadcasting
+  - Workflow
+  created: '2026-04-19'
+  modified: '2026-04-19'
+binds:
+- namespace: env
+  keys:
+    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+    AWS_REGION: AWS_REGION
+capability:
+  consumes:
+  - import: mediastore
+    location: ./shared/mediastore.yaml
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: mediastore-workflow-api
+    description: Unified REST API for Amazon MediaStore workflow management.
+    resources:
+    - path: /v1/jobs
+      name: jobs
+      description: Manage media processing jobs
+      operations:
+      - method: GET
+        name: list-jobs
+        description: List jobs
+        call: mediastore.list-jobs
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: mediastore-workflow-mcp
+    transport: http
+    description: MCP server for AI-assisted Amazon MediaStore workflow management.
+    tools:
+    - name: create-container
+      description: CreateContainer
+      hints:
+        readOnly: false
+        openWorld: true
+      call: mediastore.create-container
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-container
+      description: DeleteContainer
+      hints:
+        readOnly: false
+        openWorld: true
+      call: mediastore.delete-container
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-container-policy
+      description: DeleteContainerPolicy
+      hints:
+        readOnly: false
+        openWorld: true
+      call: mediastore.delete-container-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-cors-policy
+      description: DeleteCorsPolicy
+      hints:
+        readOnly: false
+        openWorld: true
+      call: mediastore.delete-cors-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-lifecycle-policy
+      description: DeleteLifecyclePolicy
+      hints:
+        readOnly: false
+        openWorld: true
+      call: mediastore.delete-lifecycle-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-metric-policy
+      description: DeleteMetricPolicy
+      hints:
+        readOnly: false
+        openWorld: true
+      call: mediastore.delete-metric-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: describe-container
+      description: DescribeContainer
+      hints:
+        readOnly: false
+        openWorld: true
+      call: mediastore.describe-container
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-container-policy
+      description: GetContainerPolicy
+      hints:
+        readOnly: false
+        openWorld: true
+      call: mediastore.get-container-policy
+      outputParameters:
+      - type: object
+        mapping: $.

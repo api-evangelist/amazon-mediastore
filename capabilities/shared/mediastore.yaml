@@ -1,0 +1,501 @@
+naftiko: 1.0.0-alpha1
+info:
+  label: Amazon MediaStore API
+  description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency, and low latency required to deliver live streaming video content at 
+    scale.
+  tags:
+  - AWS
+  - Media
+  - Broadcasting
+  created: '2026-04-19'
+  modified: '2026-04-19'
+binds:
+- namespace: env
+  keys:
+    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+    AWS_REGION: AWS_REGION
+capability:
+  consumes:
+  - type: http
+    namespace: mediastore
+    baseUri: http://mediastore.{region}.amazonaws.com
+    description: Amazon MediaStore REST API
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{AWS_ACCESS_KEY_ID}}'
+      placement: header
+    resources:
+    - name: default
+      path: /
+      description: Amazon MediaStore resources
+      operations:
+      - name: create-container
+        method: POST
+        description: CreateContainer
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: delete-container
+        method: POST
+        description: DeleteContainer
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: delete-container-policy
+        method: POST
+        description: DeleteContainerPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: delete-cors-policy
+        method: POST
+        description: DeleteCorsPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: delete-lifecycle-policy
+        method: POST
+        description: DeleteLifecyclePolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: delete-metric-policy
+        method: POST
+        description: DeleteMetricPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: describe-container
+        method: POST
+        description: DescribeContainer
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: get-container-policy
+        method: POST
+        description: GetContainerPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: get-cors-policy
+        method: POST
+        description: GetCorsPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: get-lifecycle-policy
+        method: POST
+        description: GetLifecyclePolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: get-metric-policy
+        method: POST
+        description: GetMetricPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: list-containers
+        method: POST
+        description: ListContainers
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          required: false
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          required: false
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: list-tags-for-resource
+        method: POST
+        description: ListTagsForResource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: put-container-policy
+        method: POST
+        description: PutContainerPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: put-cors-policy
+        method: POST
+        description: PutCorsPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: put-lifecycle-policy
+        method: POST
+        description: PutLifecyclePolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: put-metric-policy
+        method: POST
+        description: PutMetricPolicy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: start-access-logging
+        method: POST
+        description: StartAccessLogging
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: stop-access-logging
+        method: POST
+        description: StopAccessLogging
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: tag-resource
+        method: POST
+        description: TagResource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+      - name: untag-resource
+        method: POST
+        description: UntagResource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+          description: X-Amz-Target
+        body:
+          type: json
+          data: {}
+  exposes:
+  - type: rest
+    port: 8100
+    namespace: mediastore-rest
+    resources:
+    - path: /v1/resources
+      name: resources
+      description: Amazon MediaStore resources
+      operations:
+      - method: GET
+        name: list-resources
+        description: List Amazon MediaStore resources
+        call: mediastore.list
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9100
+    namespace: mediastore-mcp
+    transport: http
+    tools:
+    - name: create-container
+      description: CreateContainer
+      hints:
+        readOnly: false
+      call: mediastore.create-container
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-container
+      description: DeleteContainer
+      hints:
+        readOnly: false
+      call: mediastore.delete-container
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-container-policy
+      description: DeleteContainerPolicy
+      hints:
+        readOnly: false
+      call: mediastore.delete-container-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-cors-policy
+      description: DeleteCorsPolicy
+      hints:
+        readOnly: false
+      call: mediastore.delete-cors-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-lifecycle-policy
+      description: DeleteLifecyclePolicy
+      hints:
+        readOnly: false
+      call: mediastore.delete-lifecycle-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-metric-policy
+      description: DeleteMetricPolicy
+      hints:
+        readOnly: false
+      call: mediastore.delete-metric-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: describe-container
+      description: DescribeContainer
+      hints:
+        readOnly: false
+      call: mediastore.describe-container
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-container-policy
+      description: GetContainerPolicy
+      hints:
+        readOnly: false
+      call: mediastore.get-container-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-cors-policy
+      description: GetCorsPolicy
+      hints:
+        readOnly: false
+      call: mediastore.get-cors-policy
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-lifecycle-policy
+      description: GetLifecyclePolicy
+      hints:
+        readOnly: false
+      call: mediastore.get-lifecycle-policy
+      outputParameters:
+      - type: object
+        mapping: $.

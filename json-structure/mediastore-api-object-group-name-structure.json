@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-object-group-name-structure.json",
+  "name": "ObjectGroupName",
+  "type": "string",
+  "description": "ObjectGroupName schema from Amazon MediaStore API",
+  "pattern": "[a-zA-Z0-9_]+",
+  "minLength": 1,
+  "maxLength": 30
+}

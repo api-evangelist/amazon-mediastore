@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-tag-value-structure.json",
+  "name": "TagValue",
+  "type": "string",
+  "description": "TagValue schema from Amazon MediaStore API",
+  "pattern": "[\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*",
+  "minLength": 0,
+  "maxLength": 256
+}

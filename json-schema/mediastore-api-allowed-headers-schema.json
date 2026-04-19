@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-allowed-headers-schema.json",
+  "title": "AllowedHeaders",
+  "description": "AllowedHeaders schema from Amazon MediaStore API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Header"
+  },
+  "minItems": 0,
+  "maxItems": 100
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-get-cors-policy-output-structure.json",
+  "name": "GetCorsPolicyOutput",
+  "type": "object",
+  "description": "GetCorsPolicyOutput schema from Amazon MediaStore API",
+  "properties": {
+    "CorsPolicy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CorsPolicy"
+        },
+        {
+          "description": "The CORS policy assigned to the container."
+        }
+      ]
+    }
+  },
+  "required": [
+    "CorsPolicy"
+  ]
+}

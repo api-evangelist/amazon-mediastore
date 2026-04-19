@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-describe-container-input-structure.json",
+  "name": "DescribeContainerInput",
+  "type": "object",
+  "description": "DescribeContainerInput schema from Amazon MediaStore API",
+  "properties": {
+    "ContainerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container to query."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-put-lifecycle-policy-input-structure.json",
+  "name": "PutLifecyclePolicyInput",
+  "type": "object",
+  "description": "PutLifecyclePolicyInput schema from Amazon MediaStore API",
+  "properties": {
+    "ContainerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container that you want to assign the object lifecycle policy to."
+        }
+      ]
+    },
+    "LifecyclePolicy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LifecyclePolicy"
+        },
+        {
+          "description": "The object lifecycle policy to apply to the container."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ContainerName",
+    "LifecyclePolicy"
+  ]
+}

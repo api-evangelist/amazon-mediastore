@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-delete-cors-policy-input-structure.json",
+  "name": "DeleteCorsPolicyInput",
+  "type": "object",
+  "description": "DeleteCorsPolicyInput schema from Amazon MediaStore API",
+  "properties": {
+    "ContainerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container to remove the policy from."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ContainerName"
+  ]
+}

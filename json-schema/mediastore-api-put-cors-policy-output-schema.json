@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-put-cors-policy-output-schema.json",
+  "title": "PutCorsPolicyOutput",
+  "description": "PutCorsPolicyOutput schema from Amazon MediaStore API",
+  "type": "object",
+  "properties": {}
+}

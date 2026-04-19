@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-internal-server-error-structure.json",
+  "name": "InternalServerError",
+  "description": "InternalServerError schema from Amazon MediaStore API"
+}

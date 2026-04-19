@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-endpoint-structure.json",
+  "name": "Endpoint",
+  "type": "string",
+  "description": "Endpoint schema from Amazon MediaStore API",
+  "pattern": "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+",
+  "minLength": 1,
+  "maxLength": 255
+}

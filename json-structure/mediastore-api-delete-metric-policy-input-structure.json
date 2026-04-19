@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-delete-metric-policy-input-structure.json",
+  "name": "DeleteMetricPolicyInput",
+  "type": "object",
+  "description": "DeleteMetricPolicyInput schema from Amazon MediaStore API",
+  "properties": {
+    "ContainerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container that is associated with the metric policy that you want to delete."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ContainerName"
+  ]
+}

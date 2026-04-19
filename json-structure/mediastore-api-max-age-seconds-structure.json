@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-max-age-seconds-structure.json",
+  "name": "MaxAgeSeconds",
+  "type": "integer",
+  "description": "MaxAgeSeconds schema from Amazon MediaStore API",
+  "minimum": 0,
+  "maximum": 2147483647
+}

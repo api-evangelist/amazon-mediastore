@@ -1,0 +1,7 @@
+{
+  "AllowedOrigins": "example-value",
+  "AllowedMethods": "example-value",
+  "AllowedHeaders": "example-value",
+  "MaxAgeSeconds": "example-value",
+  "ExposeHeaders": "example-value"
+}

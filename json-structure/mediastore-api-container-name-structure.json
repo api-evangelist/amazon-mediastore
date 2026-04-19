@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-container-name-structure.json",
+  "name": "ContainerName",
+  "type": "string",
+  "description": "ContainerName schema from Amazon MediaStore API",
+  "pattern": "[\\w-]+",
+  "minLength": 1,
+  "maxLength": 255
+}

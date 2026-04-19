@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-cors-policy-structure.json",
+  "name": "CorsPolicy",
+  "type": "array",
+  "description": "The CORS policy of the container. ",
+  "items": {
+    "$ref": "#/components/schemas/CorsRule"
+  },
+  "minItems": 1,
+  "maxItems": 100
+}

@@ -1,0 +1,8 @@
+{
+  "Endpoint": "example-value",
+  "CreationTime": "example-value",
+  "ARN": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Name": "example-resource",
+  "Status": "ACTIVE",
+  "AccessLoggingEnabled": "example-value"
+}

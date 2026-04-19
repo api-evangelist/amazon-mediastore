@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-metric-policy-rules-schema.json",
+  "title": "MetricPolicyRules",
+  "description": "MetricPolicyRules schema from Amazon MediaStore API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/MetricPolicyRule"
+  },
+  "minItems": 1,
+  "maxItems": 300
+}

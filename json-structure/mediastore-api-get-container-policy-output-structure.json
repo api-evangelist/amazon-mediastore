@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-get-container-policy-output-structure.json",
+  "name": "GetContainerPolicyOutput",
+  "type": "object",
+  "description": "GetContainerPolicyOutput schema from Amazon MediaStore API",
+  "properties": {
+    "Policy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerPolicy"
+        },
+        {
+          "description": "The contents of the access policy."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Policy"
+  ]
+}

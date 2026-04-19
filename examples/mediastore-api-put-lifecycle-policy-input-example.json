@@ -1,0 +1,4 @@
+{
+  "ContainerName": "example-resource",
+  "LifecyclePolicy": "example-value"
+}

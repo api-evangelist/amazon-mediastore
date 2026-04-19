@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-container-level-metrics-structure.json",
+  "name": "ContainerLevelMetrics",
+  "type": "string",
+  "description": "ContainerLevelMetrics schema from Amazon MediaStore API",
+  "enum": [
+    "ENABLED",
+    "DISABLED"
+  ]
+}

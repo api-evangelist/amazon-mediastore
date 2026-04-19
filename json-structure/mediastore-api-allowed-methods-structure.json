@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-allowed-methods-structure.json",
+  "name": "AllowedMethods",
+  "type": "array",
+  "description": "AllowedMethods schema from Amazon MediaStore API",
+  "items": {
+    "$ref": "#/components/schemas/MethodName"
+  },
+  "minItems": 1,
+  "maxItems": 4
+}

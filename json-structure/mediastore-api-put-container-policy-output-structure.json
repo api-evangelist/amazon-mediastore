@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-put-container-policy-output-structure.json",
+  "name": "PutContainerPolicyOutput",
+  "type": "object",
+  "description": "PutContainerPolicyOutput schema from Amazon MediaStore API",
+  "properties": {}
+}

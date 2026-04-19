@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-expose-headers-structure.json",
+  "name": "ExposeHeaders",
+  "type": "array",
+  "description": "ExposeHeaders schema from Amazon MediaStore API",
+  "items": {
+    "$ref": "#/components/schemas/Header"
+  },
+  "minItems": 0,
+  "maxItems": 100
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-delete-container-policy-input-structure.json",
+  "name": "DeleteContainerPolicyInput",
+  "type": "object",
+  "description": "DeleteContainerPolicyInput schema from Amazon MediaStore API",
+  "properties": {
+    "ContainerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container that holds the policy."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ContainerName"
+  ]
+}

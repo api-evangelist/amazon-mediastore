@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-list-tags-for-resource-output-structure.json",
+  "name": "ListTagsForResourceOutput",
+  "type": "object",
+  "description": "ListTagsForResourceOutput schema from Amazon MediaStore API",
+  "properties": {
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "An array of key:value pairs that are assigned to the container."
+        }
+      ]
+    }
+  }
+}

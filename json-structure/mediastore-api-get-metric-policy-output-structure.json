@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-get-metric-policy-output-structure.json",
+  "name": "GetMetricPolicyOutput",
+  "type": "object",
+  "description": "GetMetricPolicyOutput schema from Amazon MediaStore API",
+  "properties": {
+    "MetricPolicy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MetricPolicy"
+        },
+        {
+          "description": "The metric policy that is associated with the specific container."
+        }
+      ]
+    }
+  },
+  "required": [
+    "MetricPolicy"
+  ]
+}

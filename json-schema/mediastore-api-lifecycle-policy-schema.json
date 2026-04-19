@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-lifecycle-policy-schema.json",
+  "title": "LifecyclePolicy",
+  "description": "LifecyclePolicy schema from Amazon MediaStore API",
+  "type": "string",
+  "pattern": "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+",
+  "minLength": 0,
+  "maxLength": 8192
+}

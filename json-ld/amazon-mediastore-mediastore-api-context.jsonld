@@ -1,0 +1,200 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "pan": "https://pan.dev/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Origin": "pan:Origin",
+    "MaxAgeSeconds": "pan:MaxAgeSeconds",
+    "PolicyNotFoundException": "pan:PolicyNotFoundException",
+    "AllowedHeaders": "pan:AllowedHeaders",
+    "TimeStamp": "pan:TimeStamp",
+    "InternalServerError": "pan:InternalServerError",
+    "ContainerNotFoundException": "pan:ContainerNotFoundException",
+    "MethodName": "pan:MethodName",
+    "PaginationToken": "pan:PaginationToken",
+    "TagResourceOutput": "pan:TagResourceOutput",
+    "Tag": "pan:Tag",
+    "DescribeContainerOutput": "pan:DescribeContainerOutput",
+    "Header": "pan:Header",
+    "ListContainersInput": "pan:ListContainersInput",
+    "MetricPolicy": "pan:MetricPolicy",
+    "TagValue": "pan:TagValue",
+    "TagKey": "pan:TagKey",
+    "GetMetricPolicyInput": "pan:GetMetricPolicyInput",
+    "PutMetricPolicyOutput": "pan:PutMetricPolicyOutput",
+    "DeleteLifecyclePolicyOutput": "pan:DeleteLifecyclePolicyOutput",
+    "StopAccessLoggingOutput": "pan:StopAccessLoggingOutput",
+    "DeleteContainerPolicyOutput": "pan:DeleteContainerPolicyOutput",
+    "PutLifecyclePolicyInput": "pan:PutLifecyclePolicyInput",
+    "TagList": "pan:TagList",
+    "DeleteContainerInput": "pan:DeleteContainerInput",
+    "ListTagsForResourceInput": "pan:ListTagsForResourceInput",
+    "ContainerName": "pan:ContainerName",
+    "ContainerAccessLoggingEnabled": "pan:ContainerAccessLoggingEnabled",
+    "ContainerList": "pan:ContainerList",
+    "GetMetricPolicyOutput": "pan:GetMetricPolicyOutput",
+    "CorsPolicy": "pan:CorsPolicy",
+    "ListTagsForResourceOutput": "pan:ListTagsForResourceOutput",
+    "LimitExceededException": "pan:LimitExceededException",
+    "ContainerStatus": "pan:ContainerStatus",
+    "CorsPolicyNotFoundException": "pan:CorsPolicyNotFoundException",
+    "CorsRule": "pan:CorsRule",
+    "DeleteCorsPolicyOutput": "pan:DeleteCorsPolicyOutput",
+    "GetContainerPolicyOutput": "pan:GetContainerPolicyOutput",
+    "GetLifecyclePolicyOutput": "pan:GetLifecyclePolicyOutput",
+    "PutContainerPolicyInput": "pan:PutContainerPolicyInput",
+    "DeleteContainerOutput": "pan:DeleteContainerOutput",
+    "GetCorsPolicyInput": "pan:GetCorsPolicyInput",
+    "DeleteLifecyclePolicyInput": "pan:DeleteLifecyclePolicyInput",
+    "PutCorsPolicyOutput": "pan:PutCorsPolicyOutput",
+    "ContainerListLimit": "pan:ContainerListLimit",
+    "PutCorsPolicyInput": "pan:PutCorsPolicyInput",
+    "LifecyclePolicy": "pan:LifecyclePolicy",
+    "ExposeHeaders": "pan:ExposeHeaders",
+    "DeleteMetricPolicyOutput": "pan:DeleteMetricPolicyOutput",
+    "MetricPolicyRule": "pan:MetricPolicyRule",
+    "StopAccessLoggingInput": "pan:StopAccessLoggingInput",
+    "AllowedOrigins": "pan:AllowedOrigins",
+    "AllowedMethods": "pan:AllowedMethods",
+    "DeleteMetricPolicyInput": "pan:DeleteMetricPolicyInput",
+    "DeleteCorsPolicyInput": "pan:DeleteCorsPolicyInput",
+    "MetricPolicyRules": "pan:MetricPolicyRules",
+    "CreateContainerOutput": "pan:CreateContainerOutput",
+    "GetLifecyclePolicyInput": "pan:GetLifecyclePolicyInput",
+    "UntagResourceInput": "pan:UntagResourceInput",
+    "StartAccessLoggingOutput": "pan:StartAccessLoggingOutput",
+    "GetCorsPolicyOutput": "pan:GetCorsPolicyOutput",
+    "ListContainersOutput": "pan:ListContainersOutput",
+    "PutLifecyclePolicyOutput": "pan:PutLifecyclePolicyOutput",
+    "PutContainerPolicyOutput": "pan:PutContainerPolicyOutput",
+    "Endpoint": "pan:Endpoint",
+    "DeleteContainerPolicyInput": "pan:DeleteContainerPolicyInput",
+    "ContainerPolicy": "pan:ContainerPolicy",
+    "PutMetricPolicyInput": "pan:PutMetricPolicyInput",
+    "CreateContainerInput": "pan:CreateContainerInput",
+    "DescribeContainerInput": "pan:DescribeContainerInput",
+    "TagResourceInput": "pan:TagResourceInput",
+    "ContainerLevelMetrics": "pan:ContainerLevelMetrics",
+    "Container": "pan:Container",
+    "ContainerInUseException": "pan:ContainerInUseException",
+    "UntagResourceOutput": "pan:UntagResourceOutput",
+    "ObjectGroupName": "pan:ObjectGroupName",
+    "StartAccessLoggingInput": "pan:StartAccessLoggingInput",
+    "TagKeyList": "pan:TagKeyList",
+    "ObjectGroup": "pan:ObjectGroup",
+    "ContainerARN": "pan:ContainerARN",
+    "GetContainerPolicyInput": "pan:GetContainerPolicyInput",
+    "key": {
+      "@id": "pan:key",
+      "@type": "xsd:string"
+    },
+    "value": {
+      "@id": "pan:value",
+      "@type": "xsd:string"
+    },
+    "container": {
+      "@id": "pan:container",
+      "@type": "xsd:string"
+    },
+    "nextToken": {
+      "@id": "pan:next_token",
+      "@type": "xsd:string"
+    },
+    "maxResults": {
+      "@id": "pan:max_results",
+      "@type": "xsd:string"
+    },
+    "containerLevelMetrics": {
+      "@id": "pan:container_level_metrics",
+      "@type": "xsd:string"
+    },
+    "metricPolicyRules": {
+      "@id": "pan:metric_policy_rules",
+      "@type": "xsd:string"
+    },
+    "containerName": {
+      "@id": "pan:container_name",
+      "@type": "xsd:string"
+    },
+    "lifecyclePolicy": {
+      "@id": "pan:lifecycle_policy",
+      "@type": "xsd:string"
+    },
+    "resource": {
+      "@id": "pan:resource",
+      "@type": "xsd:string"
+    },
+    "metricPolicy": {
+      "@id": "pan:metric_policy",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "pan:tags",
+      "@type": "xsd:string"
+    },
+    "allowedOrigins": {
+      "@id": "pan:allowed_origins",
+      "@type": "xsd:string"
+    },
+    "allowedMethods": {
+      "@id": "pan:allowed_methods",
+      "@type": "xsd:string"
+    },
+    "allowedHeaders": {
+      "@id": "pan:allowed_headers",
+      "@type": "xsd:string"
+    },
+    "maxAgeSeconds": {
+      "@id": "pan:max_age_seconds",
+      "@type": "xsd:string"
+    },
+    "exposeHeaders": {
+      "@id": "pan:expose_headers",
+      "@type": "xsd:string"
+    },
+    "policy": {
+      "@id": "pan:policy",
+      "@type": "xsd:string"
+    },
+    "corsPolicy": {
+      "@id": "pan:cors_policy",
+      "@type": "xsd:string"
+    },
+    "objectGroup": {
+      "@id": "pan:object_group",
+      "@type": "xsd:string"
+    },
+    "objectGroupName": {
+      "@id": "pan:object_group_name",
+      "@type": "xsd:string"
+    },
+    "tagKeys": {
+      "@id": "pan:tag_keys",
+      "@type": "xsd:string"
+    },
+    "containers": {
+      "@id": "pan:containers",
+      "@type": "xsd:string"
+    },
+    "endpoint": {
+      "@id": "pan:endpoint",
+      "@type": "xsd:string"
+    },
+    "creationTime": "schema:dateCreated",
+    "arn": {
+      "@id": "pan:arn",
+      "@type": "xsd:string"
+    },
+    "name": "schema:name",
+    "status": {
+      "@id": "pan:status",
+      "@type": "xsd:string"
+    },
+    "accessLoggingEnabled": {
+      "@id": "pan:access_logging_enabled",
+      "@type": "xsd:string"
+    }
+  }
+}

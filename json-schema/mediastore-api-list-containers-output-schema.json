@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-schema/mediastore-api-list-containers-output-schema.json",
+  "title": "ListContainersOutput",
+  "description": "ListContainersOutput schema from Amazon MediaStore API",
+  "type": "object",
+  "properties": {
+    "Containers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerList"
+        },
+        {
+          "description": "The names of the containers."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationToken"
+        },
+        {
+          "description": " <code>NextToken</code> is the token to use in the next call to <code>ListContainers</code>. This token is returned only if you included the <code>MaxResults</code> tag in the original command, and only if there are still containers to return. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "Containers"
+  ]
+}

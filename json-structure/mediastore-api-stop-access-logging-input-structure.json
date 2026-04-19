@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-stop-access-logging-input-structure.json",
+  "name": "StopAccessLoggingInput",
+  "type": "object",
+  "description": "StopAccessLoggingInput schema from Amazon MediaStore API",
+  "properties": {
+    "ContainerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ContainerName"
+        },
+        {
+          "description": "The name of the container that you want to stop access logging on."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ContainerName"
+  ]
+}

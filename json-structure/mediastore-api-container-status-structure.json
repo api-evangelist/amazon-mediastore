@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/json-structure/mediastore-api-container-status-structure.json",
+  "name": "ContainerStatus",
+  "type": "string",
+  "description": "ContainerStatus schema from Amazon MediaStore API",
+  "enum": [
+    "ACTIVE",
+    "CREATING",
+    "DELETING"
+  ],
+  "minLength": 1,
+  "maxLength": 16
+}
