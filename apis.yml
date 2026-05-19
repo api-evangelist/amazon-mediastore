@@ -1,6 +1,7 @@
 aid: amazon-mediastore
 name: Amazon MediaStore
-description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency, and low latency required to deliver live streaming video content at scale.
+description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency,
+  and low latency required to deliver live streaming video content at scale.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -10,13 +11,13 @@ tags:
 - Media
 url: https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-04-19'
+modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
 - aid: amazon-mediastore:mediastore-api
   name: Amazon MediaStore API
-  description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency, and low latency required to deliver live streaming video content at 
-    scale.
+  description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency,
+    and low latency required to deliver live streaming video content at scale.
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
@@ -34,6 +35,8 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
+  - type: NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
 common:
 - type: Portal
   url: https://aws.amazon.com/mediastore/
@@ -61,8 +64,6 @@ common:
   url: rules/amazon-mediastore-spectral-rules.yml
 - type: Vocabulary
   url: vocabulary/amazon-mediastore-vocabulary.yaml
-- type: NaftikoCapability
-  url: capabilities/amazon-mediastore-media-workflow.yaml
 - type: Features
   data:
   - name: High-Performance Media Storage
