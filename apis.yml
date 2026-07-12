@@ -38,6 +38,14 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-mediastore.yaml
 common:
+- type: TrustCenter
+  url: security/amazon-mediastore-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-mediastore-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-mediastore-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-mediastore-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/mediastore/
 - type: Documentation
