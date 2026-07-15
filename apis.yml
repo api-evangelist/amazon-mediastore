@@ -38,6 +38,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-mediastore.yaml
 common:
+- type: AgenticAccess
+  url: agentic-access/amazon-mediastore-agentic-access.yml
 - type: TrustCenter
   url: security/amazon-mediastore-trust-center.yml
 - type: VulnerabilityDisclosure
