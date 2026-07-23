@@ -1,0 +1,337 @@
+openapi: 3.0.0
+info:
+  version: 2017-09-01
+  x-release: v4
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.ListContainers API'
+  description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: mediastore
+  x-aws-signingName: mediastore
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/mediastore-2017-09-01.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://mediastore.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The MediaStore multi-region endpoint
+- url: https://mediastore.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The MediaStore multi-region endpoint
+- url: http://mediastore.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The MediaStore endpoint for China (Beijing) and China (Ningxia)
+- url: https://mediastore.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The MediaStore endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=MediaStore 20170901.ListContainers'
+paths:
+  /#X-Amz-Target=MediaStore_20170901.ListContainers:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: ListContainers
+      description: <p>Lists the properties of all containers in AWS Elemental MediaStore. </p> <p>You can query to receive all the containers in one response. Or you can include the <code>MaxResults</code> parameter to receive a limited number of containers in each response. In this case, the response includes a token. To get the next set of containers, send the command again, this time with the <code>NextToken</code> parameter (with the returned token as its value). The next set of responses appears, with a token if there are still more containers to receive. </p> <p>See also <a>DescribeContainer</a>, which gets the properties of one container. </p>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListContainersOutput'
+              examples:
+                ListContainers200Example:
+                  summary: Default ListContainers 200 response
+                  x-microcks-default: true
+                  value:
+                    Containers: example-value
+                    NextToken: example-value
+        '480':
+          description: InternalServerError
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerError'
+              examples:
+                ListContainers480Example:
+                  summary: Default ListContainers 480 response
+                  x-microcks-default: true
+                  value: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListContainersInput'
+      parameters:
+      - name: MaxResults
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: NextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - MediaStore_20170901.ListContainers
+      summary: Amazon MediaStore List Containers
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=MediaStore 20170901.ListContainers'
+components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    ContainerName:
+      type: string
+      pattern: '[\w-]+'
+      minLength: 1
+      maxLength: 255
+    PaginationToken:
+      type: string
+      pattern: '[0-9A-Za-z=/+]+'
+      minLength: 1
+      maxLength: 1024
+    InternalServerError: {}
+    ContainerListLimit:
+      type: integer
+      minimum: 1
+      maximum: 100
+    ContainerARN:
+      type: string
+      pattern: arn:aws:mediastore:[a-z]+-[a-z]+-\d:\d{12}:container/[\w-]{1,255}
+      minLength: 1
+      maxLength: 1024
+    ContainerStatus:
+      type: string
+      enum:
+      - ACTIVE
+      - CREATING
+      - DELETING
+      minLength: 1
+      maxLength: 16
+    ListContainersOutput:
+      type: object
+      required:
+      - Containers
+      properties:
+        Containers:
+          allOf:
+          - $ref: '#/components/schemas/ContainerList'
+          - description: The names of the containers.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: ' <code>NextToken</code> is the token to use in the next call to <code>ListContainers</code>. This token is returned only if you included the <code>MaxResults</code> tag in the original command, and only if there are still containers to return. '
+    ListContainersInput:
+      type: object
+      title: ListContainersInput
+      properties:
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: Only if you used <code>MaxResults</code> in the first command, enter the token (which was included in the previous response) to obtain the next set of containers. This token is included in a response only if there actually are more containers to list.
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/ContainerListLimit'
+          - description: 'Enter the maximum number of containers in the response. Use from 1 to 255 characters. '
+    TimeStamp:
+      type: string
+      format: date-time
+    Container:
+      type: object
+      properties:
+        Endpoint:
+          allOf:
+          - $ref: '#/components/schemas/Endpoint'
+          - description: The DNS endpoint of the container. Use the endpoint to identify the specific container when sending requests to the data plane. The service assigns this value when the container is created. Once the value has been assigned, it does not change.
+        CreationTime:
+          allOf:
+          - $ref: '#/components/schemas/TimeStamp'
+          - description: Unix timestamp.
+        ARN:
+          allOf:
+          - $ref: '#/components/schemas/ContainerARN'
+          - description: '<p>The Amazon Resource Name (ARN) of the container. The ARN has the following format:</p> <p>arn:aws:&lt;region&gt;:&lt;account that owns this container&gt;:container/&lt;name of container&gt; </p> <p>For example: arn:aws:mediastore:us-west-2:111122223333:container/movies </p>'
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/ContainerName'
+          - description: The name of the container.
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/ContainerStatus'
+          - description: 'The status of container creation or deletion. The status is one of the following: <code>CREATING</code>, <code>ACTIVE</code>, or <code>DELETING</code>. While the service is creating the container, the status is <code>CREATING</code>. When the endpoint is available, the status changes to <code>ACTIVE</code>.'
+        AccessLoggingEnabled:
+          allOf:
+          - $ref: '#/components/schemas/ContainerAccessLoggingEnabled'
+          - description: The state of access logging on the container. This value is <code>false</code> by default, indicating that AWS Elemental MediaStore does not send access logs to Amazon CloudWatch Logs. When you enable access logging on the container, MediaStore changes this value to <code>true</code>, indicating that the service delivers access logs for objects stored in that container to CloudWatch Logs.
+      description: This section describes operations that you can perform on an AWS Elemental MediaStore container.
+    ContainerList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Container'
+    ContainerAccessLoggingEnabled:
+      type: boolean
+    Endpoint:
+      type: string
+      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
+      minLength: 1
+      maxLength: 255
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/mediastore/
+x-hasEquivalentPaths: true
