@@ -3,7 +3,20 @@ name: Amazon MediaStore
 description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency,
   and low latency required to deliver live streaming video content at scale.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-mediastore.png
 tags:
 - AWS
 - Broadcasting
@@ -14,21 +27,489 @@ created: '2026-03-16'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-- aid: amazon-mediastore:mediastore-api
-  name: Amazon MediaStore API
-  description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency,
-    and low latency required to deliver live streaming video content at scale.
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.CreateContainer API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.CreateContainer API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.createcontainer.
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
-  - Broadcasting
-  - Media Processing
-  - Media
+  - '#X Amz Target=MediaStore 20170901.CreateContainer'
   properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteContainer API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.DeleteContainer API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.deletecontainer.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.DeleteContainer'
+  properties:
   - type: OpenAPI
-    url: openapi/amazon-mediastore-openapi-original.yml
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteContainerPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.DeleteContainerPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.deletecontainerpolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.DeleteContainerPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteCorsPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.DeleteCorsPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.deletecorspolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.DeleteCorsPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.deletelifecyclepolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteMetricPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.DeleteMetricPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.deletemetricpolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.DeleteMetricPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DescribeContainer API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.DescribeContainer API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.describecontainer.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.DescribeContainer'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetContainerPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.GetContainerPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.getcontainerpolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.GetContainerPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetCorsPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.GetCorsPolicy API from Amazon MediaStore — 1 operation(s) for
+    #x amz target=mediastore 20170901.getcorspolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.GetCorsPolicy'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetLifecyclePolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.GetLifecyclePolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.getlifecyclepolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.GetLifecyclePolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetMetricPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.GetMetricPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.getmetricpolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.GetMetricPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.ListContainers API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.ListContainers API from Amazon MediaStore — 1 operation(s) for
+    #x amz target=mediastore 20170901.listcontainers.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.ListContainers'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.ListTagsForResource API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.ListTagsForResource API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.listtagsforresource.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.ListTagsForResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutContainerPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.PutContainerPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.putcontainerpolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.PutContainerPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutCorsPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.PutCorsPolicy API from Amazon MediaStore — 1 operation(s) for
+    #x amz target=mediastore 20170901.putcorspolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.PutCorsPolicy'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutLifecyclePolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.PutLifecyclePolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.putlifecyclepolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.PutLifecyclePolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutMetricPolicy API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.PutMetricPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.putmetricpolicy.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.PutMetricPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.StartAccessLogging API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.StartAccessLogging API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.startaccesslogging.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.StartAccessLogging'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: >-
+    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.StopAccessLogging API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.StopAccessLogging API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.stopaccesslogging.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.StopAccessLogging'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.TagResource API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.TagResource API from Amazon MediaStore — 1 operation(s) for
+    #x amz target=mediastore 20170901.tagresource.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.TagResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
+  - type: GettingStarted
+    url: https://aws.amazon.com/mediastore/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/mediastore/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/mediastore/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-mediastore.yaml
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api
+  name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.UntagResource API'
+  description: >-
+    The #X Amz Target=MediaStore 20170901.UntagResource API from Amazon MediaStore — 1 operation(s) for
+    #x amz target=mediastore 20170901.untagresource.
+  humanURL: https://aws.amazon.com/mediastore/
+  baseURL: http://mediastore.{region}.amazonaws.com
+  tags:
+  - '#X Amz Target=MediaStore 20170901.UntagResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
     url: https://aws.amazon.com/mediastore/getting-started/
   - type: Pricing
@@ -38,6 +519,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-mediastore.yaml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-mediastore/overview
 - type: AgenticAccess
   url: agentic-access/amazon-mediastore-agentic-access.yml
 - type: TrustCenter
