@@ -1,0 +1,486 @@
+{
+  "info": {
+    "_postman_id": "ea46dd5b-5808-4229-bd65-a0f3a48f923e",
+    "name": "AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.PutCorsPolicy API",
+    "description": "An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. \n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:39:51.000Z",
+    "updatedAt": "2026-07-28T10:39:52.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-ea46dd5b-5808-4229-bd65-a0f3a48f923e"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=MediaStore_20170901.PutCorsPolicy",
+      "item": [
+        {
+          "name": "Amazon MediaStore Put Cors Policy",
+          "id": "2b9662af-c6fd-451e-a359-9b4703471d8b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "MediaStore_20170901.PutCorsPolicy"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ContainerName\": \"_UpX\",\n  \"CorsPolicy\": [\n    {\n      \"AllowedOrigins\": [\n        \"so\u00a3\"\n      ],\n      \"AllowedHeaders\": [\n        \"\u0098\u00d3\u00e7\u00d0\",\n        \"\u009b\u009a\",\n        \"\u00be\u00ff\u00b7\",\n        \"C\u0092\u00dc\",\n        \"YR4\",\n        \"@\",\n        \"\u0095F\u00f7\u00e8rz\",\n        \"B\u0098@\",\n        \":\u00d8\u00bd\u00d7\u00c2\u008eB\u00df\u00ea\u00e6\",\n        \"<\u00dc|,\u00a5XQ\u00f7\u0088\u00ea\",\n        \"\u00ca\u0093\u009ce\u008a\u00ae\",\n        \"\u00f0\u00a1\u00b2\",\n        \"\u00a0\u00f1\u00b7\u00b7\u00fc\",\n        \"\u00f04p\u00b0\",\n        \"\u00fc\u00c0<\u00f9\u00fc\u00c0JRQ\u00c2\",\n        \"\u0092\u009c\u00fb\u008ai\",\n        \"1e\",\n        \"\u00ea\u00a51\u00ba[\u00c5\u00e4\u00b1\u00c4\",\n        \"#&D5\u00aan\u008cV\u00b8-a\",\n        \"G\u00a9\u009a\u00ff\u00dfO\u00dby\u00b1)\u00c3\"\n      ],\n      \"AllowedMethods\": [\n        \"DELETE\"\n      ],\n      \"MaxAgeSeconds\": \"<integer>\",\n      \"ExposeHeaders\": [\n        \"y\u0092\u00ec\u00f0\u00c3\u00da>\",\n        \"\u00a4\u0094\",\n        \"\u008cq\u008f\",\n        \"+\u00dfe\u00cb'7M\",\n        \"\u00fb\u00e1\u0091-8\",\n        \"z~\",\n        \"\u00ad\u009aa5\u00afG\u00b6\u00ba\u00fb\",\n        \"?\",\n        \"\u00a1\u00c4\u00b2\u00ca- 1\u00c5\u00a0\",\n        \"d\u00c3\u00b8\u00adxbS\u00df\",\n        \"\u00cfHu\u00fd>\u008a#\u008eM\",\n        \"\u008d\u00d4\u00f5\u009a\u0082\",\n        \"\u0084\u00acc\u00c5\",\n        \"[\u00d7\u00d8%\",\n        \"\u0098\u00c7]J\u00c9\u00a3\",\n        \"\\\"\u0090\u00d3p\u00ad\u00ab\u00fd\",\n        \"\u00d1\u00efKi\u00d6+\",\n        \"Z\u00deH\",\n        \"\u00e2\u009b\",\n        \"\u00a8$\u00f1\u00dc\u00c6\u009dI\"\n      ]\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=MediaStore_20170901.PutCorsPolicy",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=MediaStore_20170901.PutCorsPolicy"
+            },
+            "description": "<p>Sets the cross-origin resource sharing (CORS) configuration on a container so that the container can service cross-origin requests. For example, you might want to enable a request whose origin is http://www.example.com to access your AWS Elemental MediaStore container at my.example.container.com by using the browser's XMLHttpRequest capability.</p> <p>To enable CORS on a container, you attach a CORS policy to the container. In the CORS policy, you configure rules that identify origins and the HTTP methods that can be executed on your container. The policy can contain up to 398,000 characters. You can add up to 100 rules to a CORS policy. If more than one rule applies, the service uses the first applicable rule listed.</p> <p>To learn more about CORS, see <a href=\"https://docs.aws.amazon.com/mediastore/latest/ug/cors-policy.html\">Cross-Origin Resource Sharing (CORS) in AWS Elemental MediaStore</a>.</p>"
+          },
+          "response": [
+            {
+              "id": "5bc54ae4-01f7-457a-936f-1d16ad2699d5",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "MediaStore_20170901.PutCorsPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ContainerName\": \"_UpX\",\n  \"CorsPolicy\": [\n    {\n      \"AllowedOrigins\": [\n        \"so\u00a3\"\n      ],\n      \"AllowedHeaders\": [\n        \"\u0098\u00d3\u00e7\u00d0\",\n        \"\u009b\u009a\",\n        \"\u00be\u00ff\u00b7\",\n        \"C\u0092\u00dc\",\n        \"YR4\",\n        \"@\",\n        \"\u0095F\u00f7\u00e8rz\",\n        \"B\u0098@\",\n        \":\u00d8\u00bd\u00d7\u00c2\u008eB\u00df\u00ea\u00e6\",\n        \"<\u00dc|,\u00a5XQ\u00f7\u0088\u00ea\",\n        \"\u00ca\u0093\u009ce\u008a\u00ae\",\n        \"\u00f0\u00a1\u00b2\",\n        \"\u00a0\u00f1\u00b7\u00b7\u00fc\",\n        \"\u00f04p\u00b0\",\n        \"\u00fc\u00c0<\u00f9\u00fc\u00c0JRQ\u00c2\",\n        \"\u0092\u009c\u00fb\u008ai\",\n        \"1e\",\n        \"\u00ea\u00a51\u00ba[\u00c5\u00e4\u00b1\u00c4\",\n        \"#&D5\u00aan\u008cV\u00b8-a\",\n        \"G\u00a9\u009a\u00ff\u00dfO\u00dby\u00b1)\u00c3\"\n      ],\n      \"AllowedMethods\": [\n        \"DELETE\"\n      ],\n      \"MaxAgeSeconds\": \"<integer>\",\n      \"ExposeHeaders\": [\n        \"y\u0092\u00ec\u00f0\u00c3\u00da>\",\n        \"\u00a4\u0094\",\n        \"\u008cq\u008f\",\n        \"+\u00dfe\u00cb'7M\",\n        \"\u00fb\u00e1\u0091-8\",\n        \"z~\",\n        \"\u00ad\u009aa5\u00afG\u00b6\u00ba\u00fb\",\n        \"?\",\n        \"\u00a1\u00c4\u00b2\u00ca- 1\u00c5\u00a0\",\n        \"d\u00c3\u00b8\u00adxbS\u00df\",\n        \"\u00cfHu\u00fd>\u008a#\u008eM\",\n        \"\u008d\u00d4\u00f5\u009a\u0082\",\n        \"\u0084\u00acc\u00c5\",\n        \"[\u00d7\u00d8%\",\n        \"\u0098\u00c7]J\u00c9\u00a3\",\n        \"\\\"\u0090\u00d3p\u00ad\u00ab\u00fd\",\n        \"\u00d1\u00efKi\u00d6+\",\n        \"Z\u00deH\",\n        \"\u00e2\u009b\",\n        \"\u00a8$\u00f1\u00dc\u00c6\u009dI\"\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=MediaStore_20170901.PutCorsPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=MediaStore_20170901.PutCorsPolicy"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:39:52.000Z",
+              "updatedAt": "2026-07-28T10:39:52.000Z",
+              "uid": "35240-5bc54ae4-01f7-457a-936f-1d16ad2699d5"
+            },
+            {
+              "id": "4c2ae60f-8468-46ad-88f3-d9ee1abd4bbb",
+              "name": "ContainerNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "MediaStore_20170901.PutCorsPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ContainerName\": \"_UpX\",\n  \"CorsPolicy\": [\n    {\n      \"AllowedOrigins\": [\n        \"so\u00a3\"\n      ],\n      \"AllowedHeaders\": [\n        \"\u0098\u00d3\u00e7\u00d0\",\n        \"\u009b\u009a\",\n        \"\u00be\u00ff\u00b7\",\n        \"C\u0092\u00dc\",\n        \"YR4\",\n        \"@\",\n        \"\u0095F\u00f7\u00e8rz\",\n        \"B\u0098@\",\n        \":\u00d8\u00bd\u00d7\u00c2\u008eB\u00df\u00ea\u00e6\",\n        \"<\u00dc|,\u00a5XQ\u00f7\u0088\u00ea\",\n        \"\u00ca\u0093\u009ce\u008a\u00ae\",\n        \"\u00f0\u00a1\u00b2\",\n        \"\u00a0\u00f1\u00b7\u00b7\u00fc\",\n        \"\u00f04p\u00b0\",\n        \"\u00fc\u00c0<\u00f9\u00fc\u00c0JRQ\u00c2\",\n        \"\u0092\u009c\u00fb\u008ai\",\n        \"1e\",\n        \"\u00ea\u00a51\u00ba[\u00c5\u00e4\u00b1\u00c4\",\n        \"#&D5\u00aan\u008cV\u00b8-a\",\n        \"G\u00a9\u009a\u00ff\u00dfO\u00dby\u00b1)\u00c3\"\n      ],\n      \"AllowedMethods\": [\n        \"DELETE\"\n      ],\n      \"MaxAgeSeconds\": \"<integer>\",\n      \"ExposeHeaders\": [\n        \"y\u0092\u00ec\u00f0\u00c3\u00da>\",\n        \"\u00a4\u0094\",\n        \"\u008cq\u008f\",\n        \"+\u00dfe\u00cb'7M\",\n        \"\u00fb\u00e1\u0091-8\",\n        \"z~\",\n        \"\u00ad\u009aa5\u00afG\u00b6\u00ba\u00fb\",\n        \"?\",\n        \"\u00a1\u00c4\u00b2\u00ca- 1\u00c5\u00a0\",\n        \"d\u00c3\u00b8\u00adxbS\u00df\",\n        \"\u00cfHu\u00fd>\u008a#\u008eM\",\n        \"\u008d\u00d4\u00f5\u009a\u0082\",\n        \"\u0084\u00acc\u00c5\",\n        \"[\u00d7\u00d8%\",\n        \"\u0098\u00c7]J\u00c9\u00a3\",\n        \"\\\"\u0090\u00d3p\u00ad\u00ab\u00fd\",\n        \"\u00d1\u00efKi\u00d6+\",\n        \"Z\u00deH\",\n        \"\u00e2\u009b\",\n        \"\u00a8$\u00f1\u00dc\u00c6\u009dI\"\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=MediaStore_20170901.PutCorsPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=MediaStore_20170901.PutCorsPolicy"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:39:52.000Z",
+              "updatedAt": "2026-07-28T10:39:52.000Z",
+              "uid": "35240-4c2ae60f-8468-46ad-88f3-d9ee1abd4bbb"
+            },
+            {
+              "id": "1e27af56-39f3-426f-8cc7-dca984a3caa7",
+              "name": "ContainerInUseException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "MediaStore_20170901.PutCorsPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ContainerName\": \"_UpX\",\n  \"CorsPolicy\": [\n    {\n      \"AllowedOrigins\": [\n        \"so\u00a3\"\n      ],\n      \"AllowedHeaders\": [\n        \"\u0098\u00d3\u00e7\u00d0\",\n        \"\u009b\u009a\",\n        \"\u00be\u00ff\u00b7\",\n        \"C\u0092\u00dc\",\n        \"YR4\",\n        \"@\",\n        \"\u0095F\u00f7\u00e8rz\",\n        \"B\u0098@\",\n        \":\u00d8\u00bd\u00d7\u00c2\u008eB\u00df\u00ea\u00e6\",\n        \"<\u00dc|,\u00a5XQ\u00f7\u0088\u00ea\",\n        \"\u00ca\u0093\u009ce\u008a\u00ae\",\n        \"\u00f0\u00a1\u00b2\",\n        \"\u00a0\u00f1\u00b7\u00b7\u00fc\",\n        \"\u00f04p\u00b0\",\n        \"\u00fc\u00c0<\u00f9\u00fc\u00c0JRQ\u00c2\",\n        \"\u0092\u009c\u00fb\u008ai\",\n        \"1e\",\n        \"\u00ea\u00a51\u00ba[\u00c5\u00e4\u00b1\u00c4\",\n        \"#&D5\u00aan\u008cV\u00b8-a\",\n        \"G\u00a9\u009a\u00ff\u00dfO\u00dby\u00b1)\u00c3\"\n      ],\n      \"AllowedMethods\": [\n        \"DELETE\"\n      ],\n      \"MaxAgeSeconds\": \"<integer>\",\n      \"ExposeHeaders\": [\n        \"y\u0092\u00ec\u00f0\u00c3\u00da>\",\n        \"\u00a4\u0094\",\n        \"\u008cq\u008f\",\n        \"+\u00dfe\u00cb'7M\",\n        \"\u00fb\u00e1\u0091-8\",\n        \"z~\",\n        \"\u00ad\u009aa5\u00afG\u00b6\u00ba\u00fb\",\n        \"?\",\n        \"\u00a1\u00c4\u00b2\u00ca- 1\u00c5\u00a0\",\n        \"d\u00c3\u00b8\u00adxbS\u00df\",\n        \"\u00cfHu\u00fd>\u008a#\u008eM\",\n        \"\u008d\u00d4\u00f5\u009a\u0082\",\n        \"\u0084\u00acc\u00c5\",\n        \"[\u00d7\u00d8%\",\n        \"\u0098\u00c7]J\u00c9\u00a3\",\n        \"\\\"\u0090\u00d3p\u00ad\u00ab\u00fd\",\n        \"\u00d1\u00efKi\u00d6+\",\n        \"Z\u00deH\",\n        \"\u00e2\u009b\",\n        \"\u00a8$\u00f1\u00dc\u00c6\u009dI\"\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=MediaStore_20170901.PutCorsPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=MediaStore_20170901.PutCorsPolicy"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:39:52.000Z",
+              "updatedAt": "2026-07-28T10:39:52.000Z",
+              "uid": "35240-1e27af56-39f3-426f-8cc7-dca984a3caa7"
+            },
+            {
+              "id": "65897dae-dae4-4a91-bb86-2bad2e7ef722",
+              "name": "InternalServerError",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "MediaStore_20170901.PutCorsPolicy"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ContainerName\": \"_UpX\",\n  \"CorsPolicy\": [\n    {\n      \"AllowedOrigins\": [\n        \"so\u00a3\"\n      ],\n      \"AllowedHeaders\": [\n        \"\u0098\u00d3\u00e7\u00d0\",\n        \"\u009b\u009a\",\n        \"\u00be\u00ff\u00b7\",\n        \"C\u0092\u00dc\",\n        \"YR4\",\n        \"@\",\n        \"\u0095F\u00f7\u00e8rz\",\n        \"B\u0098@\",\n        \":\u00d8\u00bd\u00d7\u00c2\u008eB\u00df\u00ea\u00e6\",\n        \"<\u00dc|,\u00a5XQ\u00f7\u0088\u00ea\",\n        \"\u00ca\u0093\u009ce\u008a\u00ae\",\n        \"\u00f0\u00a1\u00b2\",\n        \"\u00a0\u00f1\u00b7\u00b7\u00fc\",\n        \"\u00f04p\u00b0\",\n        \"\u00fc\u00c0<\u00f9\u00fc\u00c0JRQ\u00c2\",\n        \"\u0092\u009c\u00fb\u008ai\",\n        \"1e\",\n        \"\u00ea\u00a51\u00ba[\u00c5\u00e4\u00b1\u00c4\",\n        \"#&D5\u00aan\u008cV\u00b8-a\",\n        \"G\u00a9\u009a\u00ff\u00dfO\u00dby\u00b1)\u00c3\"\n      ],\n      \"AllowedMethods\": [\n        \"DELETE\"\n      ],\n      \"MaxAgeSeconds\": \"<integer>\",\n      \"ExposeHeaders\": [\n        \"y\u0092\u00ec\u00f0\u00c3\u00da>\",\n        \"\u00a4\u0094\",\n        \"\u008cq\u008f\",\n        \"+\u00dfe\u00cb'7M\",\n        \"\u00fb\u00e1\u0091-8\",\n        \"z~\",\n        \"\u00ad\u009aa5\u00afG\u00b6\u00ba\u00fb\",\n        \"?\",\n        \"\u00a1\u00c4\u00b2\u00ca- 1\u00c5\u00a0\",\n        \"d\u00c3\u00b8\u00adxbS\u00df\",\n        \"\u00cfHu\u00fd>\u008a#\u008eM\",\n        \"\u008d\u00d4\u00f5\u009a\u0082\",\n        \"\u0084\u00acc\u00c5\",\n        \"[\u00d7\u00d8%\",\n        \"\u0098\u00c7]J\u00c9\u00a3\",\n        \"\\\"\u0090\u00d3p\u00ad\u00ab\u00fd\",\n        \"\u00d1\u00efKi\u00d6+\",\n        \"Z\u00deH\",\n        \"\u00e2\u009b\",\n        \"\u00a8$\u00f1\u00dc\u00c6\u009dI\"\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=MediaStore_20170901.PutCorsPolicy",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=MediaStore_20170901.PutCorsPolicy"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:39:52.000Z",
+              "updatedAt": "2026-07-28T10:39:52.000Z",
+              "uid": "35240-65897dae-dae4-4a91-bb86-2bad2e7ef722"
+            }
+          ],
+          "createdAt": "2026-07-28T10:39:52.000Z",
+          "updatedAt": "2026-07-28T10:39:52.000Z",
+          "uid": "35240-2b9662af-c6fd-451e-a359-9b4703471d8b"
+        }
+      ],
+      "id": "99fd6340-a394-4ae5-9222-6a2e04ced1d7",
+      "createdAt": "2026-07-28T10:39:52.000Z",
+      "updatedAt": "2026-07-28T10:39:52.000Z",
+      "uid": "35240-99fd6340-a394-4ae5-9222-6a2e04ced1d7"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://mediastore.{{region}}.amazonaws.com"
+    }
+  ]
+}
