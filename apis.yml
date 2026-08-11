@@ -48,8 +48,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteContainer API'
   description: >-
@@ -71,8 +69,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteContainerPolicy API'
@@ -95,8 +91,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteCorsPolicy API'
@@ -119,8 +113,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy API'
@@ -143,8 +135,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteMetricPolicy API'
@@ -167,8 +157,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DescribeContainer API'
@@ -191,8 +179,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetContainerPolicy API'
@@ -215,8 +201,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetCorsPolicy API'
   description: >-
@@ -237,8 +221,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetLifecyclePolicy API'
@@ -261,8 +243,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetMetricPolicy API'
   description: >-
@@ -284,8 +264,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.ListContainers API'
   description: >-
@@ -307,8 +285,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.ListTagsForResource API'
@@ -331,8 +307,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutContainerPolicy API'
@@ -355,8 +329,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutCorsPolicy API'
   description: >-
@@ -377,8 +349,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutLifecyclePolicy API'
@@ -401,8 +371,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutMetricPolicy API'
   description: >-
@@ -424,8 +392,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.StartAccessLogging API'
@@ -448,8 +414,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: >-
     amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.StopAccessLogging API'
@@ -472,8 +436,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.TagResource API'
   description: >-
@@ -494,8 +456,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.UntagResource API'
   description: >-
@@ -516,8 +476,6 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-mediastore.yaml
 common:
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-mediastore/overview
