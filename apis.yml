@@ -3,6 +3,18 @@ name: Amazon MediaStore
 description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency,
   and low latency required to deliver live streaming video content at scale.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
