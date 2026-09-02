@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.PutMetricPolicy API'
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.PutMetricPolicy #X Amz Target=MediaStore 20170901.PutMetricPolicy #X Amz Target=MediaStore 20170901.PutMetricPolicy API'
   description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -192,75 +192,12 @@ paths:
       tags:
       - '#X Amz Target=MediaStore 20170901.PutMetricPolicy'
 components:
-  parameters:
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
     ContainerName:
       type: string
       pattern: '[\w-]+'
       minLength: 1
       maxLength: 255
-    PutMetricPolicyOutput:
-      type: object
-      properties: {}
-    ContainerInUseException: {}
-    InternalServerError: {}
-    MetricPolicyRule:
-      type: object
-      required:
-      - ObjectGroup
-      - ObjectGroupName
-      properties:
-        ObjectGroup:
-          allOf:
-          - $ref: '#/components/schemas/ObjectGroup'
-          - description: A path or file name that defines which objects to include in the group. Wildcards (*) are acceptable.
-        ObjectGroupName:
-          allOf:
-          - $ref: '#/components/schemas/ObjectGroupName'
-          - description: A name that allows you to refer to the object group.
-      description: A setting that enables metrics at the object level. Each rule contains an object group and an object group name. If the policy includes the MetricPolicyRules parameter, you must include at least one rule. Each metric policy can include up to five rules by default. You can also <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas">request a quota increase</a> to allow up to 300 rules per policy.
     ContainerLevelMetrics:
       type: string
       enum:
@@ -280,17 +217,31 @@ components:
           - $ref: '#/components/schemas/MetricPolicyRules'
           - description: A parameter that holds an array of rules that enable metrics at the object level. This parameter is optional, but if you choose to include it, you must also include at least one rule. By default, you can include up to five rules. You can also <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas">request a quota increase</a> to allow up to 300 rules per policy.
       description: <p>The metric policy that is associated with the container. A metric policy allows AWS Elemental MediaStore to send metrics to Amazon CloudWatch. In the policy, you must indicate whether you want MediaStore to send container-level metrics. You can also include rules to define groups of objects that you want MediaStore to send object-level metrics for.</p> <p>To view examples of how to construct a metric policy for your use case, see <a href="https://docs.aws.amazon.com/mediastore/latest/ug/policies-metric-examples.html">Example Metric Policies</a>.</p>
-    ObjectGroup:
-      type: string
-      pattern: /?(?:[A-Za-z0-9_=:\.\-\~\*]+/){0,10}(?:[A-Za-z0-9_=:\.\-\~\*]+)?/?
-      minLength: 1
-      maxLength: 900
-    ContainerNotFoundException: {}
     ObjectGroupName:
       type: string
       pattern: '[a-zA-Z0-9_]+'
       minLength: 1
       maxLength: 30
+    ContainerInUseException: {}
+    MetricPolicyRule:
+      type: object
+      required:
+      - ObjectGroup
+      - ObjectGroupName
+      properties:
+        ObjectGroup:
+          allOf:
+          - $ref: '#/components/schemas/ObjectGroup'
+          - description: A path or file name that defines which objects to include in the group. Wildcards (*) are acceptable.
+        ObjectGroupName:
+          allOf:
+          - $ref: '#/components/schemas/ObjectGroupName'
+          - description: A name that allows you to refer to the object group.
+      description: A setting that enables metrics at the object level. Each rule contains an object group and an object group name. If the policy includes the MetricPolicyRules parameter, you must include at least one rule. Each metric policy can include up to five rules by default. You can also <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas">request a quota increase</a> to allow up to 300 rules per policy.
+    PutMetricPolicyOutput:
+      type: object
+      properties: {}
+    InternalServerError: {}
     MetricPolicyRules:
       type: array
       items:
@@ -312,6 +263,55 @@ components:
           allOf:
           - $ref: '#/components/schemas/MetricPolicy'
           - description: '<p>The metric policy that you want to associate with the container. In the policy, you must indicate whether you want MediaStore to send container-level metrics. You can also include up to five rules to define groups of objects that you want MediaStore to send object-level metrics for. If you include rules in the policy, construct each rule with both of the following:</p> <ul> <li> <p>An object group that defines which objects to include in the group. The definition can be a path or a file name, but it can''t have more than 900 characters. Valid characters are: a-z, A-Z, 0-9, _ (underscore), = (equal), : (colon), . (period), - (hyphen), ~ (tilde), / (forward slash), and * (asterisk). Wildcards (*) are acceptable.</p> </li> <li> <p>An object group name that allows you to refer to the object group. The name can''t have more than 30 characters. Valid characters are: a-z, A-Z, 0-9, and _ (underscore).</p> </li> </ul>'
+    ObjectGroup:
+      type: string
+      pattern: /?(?:[A-Za-z0-9_=:\.\-\~\*]+/){0,10}(?:[A-Za-z0-9_=:\.\-\~\*]+)?/?
+      minLength: 1
+      maxLength: 900
+    ContainerNotFoundException: {}
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

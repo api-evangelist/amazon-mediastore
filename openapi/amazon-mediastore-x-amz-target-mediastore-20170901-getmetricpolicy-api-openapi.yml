@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetMetricPolicy API'
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetMetricPolicy #X Amz Target=MediaStore 20170901.GetMetricPolicy #X Amz Target=MediaStore 20170901.GetMetricPolicy API'
   description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -204,57 +204,37 @@ paths:
       tags:
       - '#X Amz Target=MediaStore 20170901.GetMetricPolicy'
 components:
-  parameters:
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
     ContainerName:
       type: string
       pattern: '[\w-]+'
       minLength: 1
       maxLength: 255
+    ContainerLevelMetrics:
+      type: string
+      enum:
+      - ENABLED
+      - DISABLED
+    MetricPolicy:
+      type: object
+      required:
+      - ContainerLevelMetrics
+      properties:
+        ContainerLevelMetrics:
+          allOf:
+          - $ref: '#/components/schemas/ContainerLevelMetrics'
+          - description: A setting to enable or disable metrics at the container level.
+        MetricPolicyRules:
+          allOf:
+          - $ref: '#/components/schemas/MetricPolicyRules'
+          - description: A parameter that holds an array of rules that enable metrics at the object level. This parameter is optional, but if you choose to include it, you must also include at least one rule. By default, you can include up to five rules. You can also <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas">request a quota increase</a> to allow up to 300 rules per policy.
+      description: <p>The metric policy that is associated with the container. A metric policy allows AWS Elemental MediaStore to send metrics to Amazon CloudWatch. In the policy, you must indicate whether you want MediaStore to send container-level metrics. You can also include rules to define groups of objects that you want MediaStore to send object-level metrics for.</p> <p>To view examples of how to construct a metric policy for your use case, see <a href="https://docs.aws.amazon.com/mediastore/latest/ug/policies-metric-examples.html">Example Metric Policies</a>.</p>
+    ObjectGroupName:
+      type: string
+      pattern: '[a-zA-Z0-9_]+'
+      minLength: 1
+      maxLength: 30
     ContainerInUseException: {}
-    InternalServerError: {}
     MetricPolicyRule:
       type: object
       required:
@@ -279,43 +259,7 @@ components:
           allOf:
           - $ref: '#/components/schemas/MetricPolicy'
           - description: The metric policy that is associated with the specific container.
-    ContainerLevelMetrics:
-      type: string
-      enum:
-      - ENABLED
-      - DISABLED
-    MetricPolicy:
-      type: object
-      required:
-      - ContainerLevelMetrics
-      properties:
-        ContainerLevelMetrics:
-          allOf:
-          - $ref: '#/components/schemas/ContainerLevelMetrics'
-          - description: A setting to enable or disable metrics at the container level.
-        MetricPolicyRules:
-          allOf:
-          - $ref: '#/components/schemas/MetricPolicyRules'
-          - description: A parameter that holds an array of rules that enable metrics at the object level. This parameter is optional, but if you choose to include it, you must also include at least one rule. By default, you can include up to five rules. You can also <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas">request a quota increase</a> to allow up to 300 rules per policy.
-      description: <p>The metric policy that is associated with the container. A metric policy allows AWS Elemental MediaStore to send metrics to Amazon CloudWatch. In the policy, you must indicate whether you want MediaStore to send container-level metrics. You can also include rules to define groups of objects that you want MediaStore to send object-level metrics for.</p> <p>To view examples of how to construct a metric policy for your use case, see <a href="https://docs.aws.amazon.com/mediastore/latest/ug/policies-metric-examples.html">Example Metric Policies</a>.</p>
-    ObjectGroup:
-      type: string
-      pattern: /?(?:[A-Za-z0-9_=:\.\-\~\*]+/){0,10}(?:[A-Za-z0-9_=:\.\-\~\*]+)?/?
-      minLength: 1
-      maxLength: 900
-    ContainerNotFoundException: {}
-    ObjectGroupName:
-      type: string
-      pattern: '[a-zA-Z0-9_]+'
-      minLength: 1
-      maxLength: 30
-    MetricPolicyRules:
-      type: array
-      items:
-        $ref: '#/components/schemas/MetricPolicyRule'
-      minItems: 1
-      maxItems: 300
-    PolicyNotFoundException: {}
+    InternalServerError: {}
     GetMetricPolicyInput:
       type: object
       required:
@@ -326,6 +270,62 @@ components:
           allOf:
           - $ref: '#/components/schemas/ContainerName'
           - description: The name of the container that is associated with the metric policy.
+    PolicyNotFoundException: {}
+    MetricPolicyRules:
+      type: array
+      items:
+        $ref: '#/components/schemas/MetricPolicyRule'
+      minItems: 1
+      maxItems: 300
+    ObjectGroup:
+      type: string
+      pattern: /?(?:[A-Za-z0-9_=:\.\-\~\*]+/){0,10}(?:[A-Za-z0-9_=:\.\-\~\*]+)?/?
+      minLength: 1
+      maxLength: 900
+    ContainerNotFoundException: {}
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey
