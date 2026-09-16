@@ -1,7 +1,7 @@
 aid: amazon-mediastore
 name: Amazon MediaStore
-description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency,
-  and low latency required to deliver live streaming video content at scale.
+description: AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance,
+  consistency, and low latency required to deliver live streaming video content at scale.
 type: Index
 deliveryModel:
   model: saas
@@ -37,22 +37,20 @@ tags:
 - Media
 url: https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-05-19'
+modified: '2026-09-16'
 specificationVersion: '0.23'
 apis:
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.CreateContainer API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.CreateContainer API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.createcontainer.
+  description: 'The #X Amz Target=MediaStore 20170901.CreateContainer API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.createcontainer.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.CreateContainer'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -63,17 +61,15 @@ apis:
     url: https://aws.amazon.com/mediastore/faqs/
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteContainer API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.DeleteContainer API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.deletecontainer.
+  description: 'The #X Amz Target=MediaStore 20170901.DeleteContainer API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.deletecontainer.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.DeleteContainer'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -82,20 +78,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteContainerPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.DeleteContainerPolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.deletecontainerpolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.DeleteContainerPolicy API from Amazon MediaStore
+    — 1 operation(s) for #x amz target=mediastore 20170901.deletecontainerpolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.DeleteContainerPolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -104,20 +97,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteCorsPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.DeleteCorsPolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.deletecorspolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.DeleteCorsPolicy API from Amazon MediaStore — 1
+    operation(s) for #x amz target=mediastore 20170901.deletecorspolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.DeleteCorsPolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -126,20 +116,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.deletelifecyclepolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy API from Amazon MediaStore
+    — 1 operation(s) for #x amz target=mediastore 20170901.deletelifecyclepolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -148,20 +135,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DeleteMetricPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.DeleteMetricPolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.deletemetricpolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.DeleteMetricPolicy API from Amazon MediaStore —
+    1 operation(s) for #x amz target=mediastore 20170901.deletemetricpolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.DeleteMetricPolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -170,20 +154,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.DescribeContainer API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.DescribeContainer API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.describecontainer.
+  description: 'The #X Amz Target=MediaStore 20170901.DescribeContainer API from Amazon MediaStore — 1
+    operation(s) for #x amz target=mediastore 20170901.describecontainer.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.DescribeContainer'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -192,20 +173,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetContainerPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.GetContainerPolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.getcontainerpolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.GetContainerPolicy API from Amazon MediaStore —
+    1 operation(s) for #x amz target=mediastore 20170901.getcontainerpolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.GetContainerPolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -216,9 +194,8 @@ apis:
     url: https://aws.amazon.com/mediastore/faqs/
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetCorsPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.GetCorsPolicy API from Amazon MediaStore — 1 operation(s) for
-    #x amz target=mediastore 20170901.getcorspolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.GetCorsPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.getcorspolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
@@ -234,20 +211,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetLifecyclePolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.GetLifecyclePolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.getlifecyclepolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.GetLifecyclePolicy API from Amazon MediaStore —
+    1 operation(s) for #x amz target=mediastore 20170901.getlifecyclepolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.GetLifecyclePolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -258,17 +232,15 @@ apis:
     url: https://aws.amazon.com/mediastore/faqs/
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.GetMetricPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.GetMetricPolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.getmetricpolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.GetMetricPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.getmetricpolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.GetMetricPolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -279,17 +251,15 @@ apis:
     url: https://aws.amazon.com/mediastore/faqs/
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.ListContainers API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.ListContainers API from Amazon MediaStore — 1 operation(s) for
-    #x amz target=mediastore 20170901.listcontainers.
+  description: 'The #X Amz Target=MediaStore 20170901.ListContainers API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.listcontainers.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.ListContainers'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -298,20 +268,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.ListTagsForResource API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.ListTagsForResource API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.listtagsforresource.
+  description: 'The #X Amz Target=MediaStore 20170901.ListTagsForResource API from Amazon MediaStore —
+    1 operation(s) for #x amz target=mediastore 20170901.listtagsforresource.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.ListTagsForResource'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -320,20 +287,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutContainerPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.PutContainerPolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.putcontainerpolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.PutContainerPolicy API from Amazon MediaStore —
+    1 operation(s) for #x amz target=mediastore 20170901.putcontainerpolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.PutContainerPolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -344,9 +308,8 @@ apis:
     url: https://aws.amazon.com/mediastore/faqs/
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutCorsPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.PutCorsPolicy API from Amazon MediaStore — 1 operation(s) for
-    #x amz target=mediastore 20170901.putcorspolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.PutCorsPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.putcorspolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
@@ -362,20 +325,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutLifecyclePolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.PutLifecyclePolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.putlifecyclepolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.PutLifecyclePolicy API from Amazon MediaStore —
+    1 operation(s) for #x amz target=mediastore 20170901.putlifecyclepolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.PutLifecyclePolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -386,17 +346,15 @@ apis:
     url: https://aws.amazon.com/mediastore/faqs/
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.PutMetricPolicy API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.PutMetricPolicy API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.putmetricpolicy.
+  description: 'The #X Amz Target=MediaStore 20170901.PutMetricPolicy API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.putmetricpolicy.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.PutMetricPolicy'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -405,20 +363,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.StartAccessLogging API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.StartAccessLogging API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.startaccesslogging.
+  description: 'The #X Amz Target=MediaStore 20170901.StartAccessLogging API from Amazon MediaStore —
+    1 operation(s) for #x amz target=mediastore 20170901.startaccesslogging.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.StartAccessLogging'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -427,20 +382,17 @@ apis:
     url: https://aws.amazon.com/mediastore/pricing/
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
-- aid: >-
-    amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api
+- aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.StopAccessLogging API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.StopAccessLogging API from Amazon MediaStore — 1 operation(s)
-    for #x amz target=mediastore 20170901.stopaccesslogging.
+  description: 'The #X Amz Target=MediaStore 20170901.StopAccessLogging API from Amazon MediaStore — 1
+    operation(s) for #x amz target=mediastore 20170901.stopaccesslogging.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
   - '#X Amz Target=MediaStore 20170901.StopAccessLogging'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api-openapi.yml
+    url: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/mediastore/
   - type: GettingStarted
@@ -451,9 +403,8 @@ apis:
     url: https://aws.amazon.com/mediastore/faqs/
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.TagResource API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.TagResource API from Amazon MediaStore — 1 operation(s) for
-    #x amz target=mediastore 20170901.tagresource.
+  description: 'The #X Amz Target=MediaStore 20170901.TagResource API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.tagresource.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
@@ -471,9 +422,8 @@ apis:
     url: https://aws.amazon.com/mediastore/faqs/
 - aid: amazon-mediastore:amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api
   name: 'Amazon MediaStore #X Amz Target=MediaStore 20170901.UntagResource API'
-  description: >-
-    The #X Amz Target=MediaStore 20170901.UntagResource API from Amazon MediaStore — 1 operation(s) for
-    #x amz target=mediastore 20170901.untagresource.
+  description: 'The #X Amz Target=MediaStore 20170901.UntagResource API from Amazon MediaStore — 1 operation(s)
+    for #x amz target=mediastore 20170901.untagresource.'
   humanURL: https://aws.amazon.com/mediastore/
   baseURL: http://mediastore.{region}.amazonaws.com
   tags:
@@ -490,6 +440,8 @@ apis:
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
 common:
+- type: Website
+  url: https://amazon.com
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-mediastore/overview
 - type: AgenticAccess
