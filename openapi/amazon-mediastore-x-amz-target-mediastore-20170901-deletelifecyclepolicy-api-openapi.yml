@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2017-09-01
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy API'
-  description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore…'
+  description: An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/mediastore-2017-09-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -203,6 +204,29 @@ paths:
       tags:
       - '#X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy'
 components:
+  schemas:
+    ContainerNotFoundException: {}
+    DeleteLifecyclePolicyInput:
+      type: object
+      required:
+      - ContainerName
+      title: DeleteLifecyclePolicyInput
+      properties:
+        ContainerName:
+          allOf:
+          - $ref: '#/components/schemas/ContainerName'
+          - description: The name of the container that holds the object lifecycle policy.
+    DeleteLifecyclePolicyOutput:
+      type: object
+      properties: {}
+    ContainerName:
+      type: string
+      pattern: '[\w-]+'
+      minLength: 1
+      maxLength: 255
+    InternalServerError: {}
+    PolicyNotFoundException: {}
+    ContainerInUseException: {}
   parameters:
     X-Amz-Algorithm:
       name: X-Amz-Algorithm
@@ -216,26 +240,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Credential:
       name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -246,29 +252,24 @@ components:
       schema:
         type: string
       required: false
-  schemas:
-    PolicyNotFoundException: {}
-    ContainerInUseException: {}
-    ContainerName:
-      type: string
-      pattern: '[\w-]+'
-      minLength: 1
-      maxLength: 255
-    ContainerNotFoundException: {}
-    DeleteLifecyclePolicyOutput:
-      type: object
-      properties: {}
-    InternalServerError: {}
-    DeleteLifecyclePolicyInput:
-      type: object
-      required:
-      - ContainerName
-      title: DeleteLifecyclePolicyInput
-      properties:
-        ContainerName:
-          allOf:
-          - $ref: '#/components/schemas/ContainerName'
-          - description: The name of the container that holds the object lifecycle policy.
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

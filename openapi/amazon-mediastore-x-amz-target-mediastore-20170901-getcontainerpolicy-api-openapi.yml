@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2017-09-01
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetContainerPolicy #X Amz Target=MediaStore 20170901.GetContainerPolicy #X Amz Target=MediaStore 20170901.GetContainerPolicy API'
-  description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore…'
+  description: An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/mediastore-2017-09-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: GetContainerPolicy
-      description: Retrieves the access policy for the specified container. For information about the data that is included in an access policy, see the <a href="https://aws.amazon.com/documentation/iam/">AWS Identity and Access Management User Guide</a>.
+      description: Retrieves the access policy for the specified container. For information about the data that is included in an access policy, see the AWS Identity and Access Management User Guide.
       responses:
         '200':
           description: Success
@@ -205,29 +206,7 @@ paths:
       - '#X Amz Target=MediaStore 20170901.GetContainerPolicy'
 components:
   schemas:
-    ContainerPolicy:
-      type: string
-      pattern: '[\x00-\x7F]+'
-      minLength: 1
-      maxLength: 8192
-    PolicyNotFoundException: {}
-    ContainerInUseException: {}
-    ContainerName:
-      type: string
-      pattern: '[\w-]+'
-      minLength: 1
-      maxLength: 255
-    GetContainerPolicyOutput:
-      type: object
-      required:
-      - Policy
-      properties:
-        Policy:
-          allOf:
-          - $ref: '#/components/schemas/ContainerPolicy'
-          - description: The contents of the access policy.
     ContainerNotFoundException: {}
-    InternalServerError: {}
     GetContainerPolicyInput:
       type: object
       required:
@@ -238,6 +217,28 @@ components:
           allOf:
           - $ref: '#/components/schemas/ContainerName'
           - description: 'The name of the container. '
+    ContainerName:
+      type: string
+      pattern: '[\w-]+'
+      minLength: 1
+      maxLength: 255
+    ContainerInUseException: {}
+    InternalServerError: {}
+    PolicyNotFoundException: {}
+    GetContainerPolicyOutput:
+      type: object
+      required:
+      - Policy
+      properties:
+        Policy:
+          allOf:
+          - $ref: '#/components/schemas/ContainerPolicy'
+          - description: The contents of the access policy.
+    ContainerPolicy:
+      type: string
+      pattern: '[\x00-\x7F]+'
+      minLength: 1
+      maxLength: 8192
   parameters:
     X-Amz-Algorithm:
       name: X-Amz-Algorithm
@@ -251,8 +252,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -269,14 +270,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string

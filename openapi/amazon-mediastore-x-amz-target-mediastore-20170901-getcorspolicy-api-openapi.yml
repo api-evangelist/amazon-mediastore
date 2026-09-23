@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2017-09-01
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetCorsPolicy #X Amz Target=MediaStore 20170901.GetCorsPolicy #X Amz Target=MediaStore 20170901.GetCorsPolicy API'
-  description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore…'
+  description: An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/mediastore-2017-09-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,10 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: GetCorsPolicy
-      description: <p>Returns the cross-origin resource sharing (CORS) configuration information that is set for the container.</p> <p>To use this operation, you must have permission to perform the <code>MediaStore:GetCorsPolicy</code> action. By default, the container owner has this permission and can grant it to others.</p>
+      description: 'Returns the cross-origin resource sharing (CORS) configuration information that is set for the container.
+
+
+        To use this operation, you must have permission to perform the MediaStore:GetCorsPolicy action. By default, the container owner has this permission and can grant it to others.'
       responses:
         '200':
           description: Success
@@ -205,28 +209,13 @@ paths:
       - '#X Amz Target=MediaStore 20170901.GetCorsPolicy'
 components:
   schemas:
-    Origin:
-      type: string
-      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
-      minLength: 1
-      maxLength: 2048
-    ContainerName:
-      type: string
-      pattern: '[\w-]+'
-      minLength: 1
-      maxLength: 255
-    MethodName:
-      type: string
-      enum:
-      - PUT
-      - GET
-      - DELETE
-      - HEAD
-    MaxAgeSeconds:
-      type: integer
-      minimum: 0
-      maximum: 2147483647
-    CorsPolicyNotFoundException: {}
+    ContainerNotFoundException: {}
+    AllowedOrigins:
+      type: array
+      items:
+        $ref: '#/components/schemas/Origin'
+      minItems: 1
+      maxItems: 100
     GetCorsPolicyOutput:
       type: object
       required:
@@ -236,17 +225,11 @@ components:
           allOf:
           - $ref: '#/components/schemas/CorsPolicy'
           - description: The CORS policy assigned to the container.
-    AllowedHeaders:
-      type: array
-      items:
-        $ref: '#/components/schemas/Header'
-      minItems: 0
-      maxItems: 100
-    Header:
+    ContainerName:
       type: string
-      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
+      pattern: '[\w-]+'
       minLength: 1
-      maxLength: 8192
+      maxLength: 255
     ContainerInUseException: {}
     ExposeHeaders:
       type: array
@@ -254,6 +237,56 @@ components:
         $ref: '#/components/schemas/Header'
       minItems: 0
       maxItems: 100
+    AllowedMethods:
+      type: array
+      items:
+        $ref: '#/components/schemas/MethodName'
+      minItems: 1
+      maxItems: 4
+    GetCorsPolicyInput:
+      type: object
+      required:
+      - ContainerName
+      title: GetCorsPolicyInput
+      properties:
+        ContainerName:
+          allOf:
+          - $ref: '#/components/schemas/ContainerName'
+          - description: The name of the container that the policy is assigned to.
+    Origin:
+      type: string
+      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
+      minLength: 1
+      maxLength: 2048
+    Header:
+      type: string
+      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
+      minLength: 1
+      maxLength: 8192
+    CorsPolicy:
+      type: array
+      description: 'The CORS policy of the container. '
+      items:
+        $ref: '#/components/schemas/CorsRule'
+      minItems: 1
+      maxItems: 100
+    MethodName:
+      type: string
+      enum:
+      - PUT
+      - GET
+      - DELETE
+      - HEAD
+    AllowedHeaders:
+      type: array
+      items:
+        $ref: '#/components/schemas/Header'
+      minItems: 0
+      maxItems: 100
+    MaxAgeSeconds:
+      type: integer
+      minimum: 0
+      maximum: 2147483647
     CorsRule:
       type: object
       required:
@@ -282,57 +315,16 @@ components:
           - description: <p>One or more headers in the response that you want users to be able to access from their applications (for example, from a JavaScript <code>XMLHttpRequest</code> object).</p> <p>This element is optional for each rule.</p>
       description: A rule for a CORS policy. You can add up to 100 rules to a CORS policy. If more than one rule applies, the service uses the first applicable rule listed.
     InternalServerError: {}
-    AllowedMethods:
-      type: array
-      items:
-        $ref: '#/components/schemas/MethodName'
-      minItems: 1
-      maxItems: 4
-    GetCorsPolicyInput:
-      type: object
-      required:
-      - ContainerName
-      title: GetCorsPolicyInput
-      properties:
-        ContainerName:
-          allOf:
-          - $ref: '#/components/schemas/ContainerName'
-          - description: The name of the container that the policy is assigned to.
-    AllowedOrigins:
-      type: array
-      items:
-        $ref: '#/components/schemas/Origin'
-      minItems: 1
-      maxItems: 100
-    ContainerNotFoundException: {}
-    CorsPolicy:
-      type: array
-      description: 'The CORS policy of the container. '
-      items:
-        $ref: '#/components/schemas/CorsRule'
-      minItems: 1
-      maxItems: 100
+    CorsPolicyNotFoundException: {}
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
     X-Amz-Signature:
       name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -349,8 +341,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

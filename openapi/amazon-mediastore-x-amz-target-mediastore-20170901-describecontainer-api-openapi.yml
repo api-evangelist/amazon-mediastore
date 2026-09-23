@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2017-09-01
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DescribeContainer #X Amz Target=MediaStore 20170901.DescribeContainer #X Amz Target=MediaStore 20170901.DescribeContainer API'
-  description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore…'
+  description: An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/mediastore-2017-09-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: DescribeContainer
-      description: Retrieves the properties of the requested container. This request is commonly used to retrieve the endpoint of a container. An endpoint is a value assigned by the service when a new container is created. A container's endpoint does not change after it has been assigned. The <code>DescribeContainer</code> request returns a single <code>Container</code> object based on <code>ContainerName</code>. To return all <code>Container</code> objects that are associated with a specified AWS account, use <a>ListContainers</a>.
+      description: Retrieves the properties of the requested container. This request is commonly used to retrieve the endpoint of a container. An endpoint is a value assigned by the service when a new container is created. A container's endpoint does not change after it has been assigned. The DescribeContainer request returns a single Container object based on ContainerName. To return all Container objects that are associated with a specified AWS account, use ListContainers.
       responses:
         '200':
           description: Success
@@ -183,8 +184,31 @@ paths:
       - '#X Amz Target=MediaStore 20170901.DescribeContainer'
 components:
   schemas:
+    ContainerNotFoundException: {}
     ContainerAccessLoggingEnabled:
       type: boolean
+    ContainerName:
+      type: string
+      pattern: '[\w-]+'
+      minLength: 1
+      maxLength: 255
+    TimeStamp:
+      type: string
+      format: date-time
+    InternalServerError: {}
+    DescribeContainerInput:
+      type: object
+      title: DescribeContainerInput
+      properties:
+        ContainerName:
+          allOf:
+          - $ref: '#/components/schemas/ContainerName'
+          - description: The name of the container to query.
+    Endpoint:
+      type: string
+      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
+      minLength: 1
+      maxLength: 255
     DescribeContainerOutput:
       type: object
       properties:
@@ -205,29 +229,6 @@ components:
       - DELETING
       minLength: 1
       maxLength: 16
-    ContainerName:
-      type: string
-      pattern: '[\w-]+'
-      minLength: 1
-      maxLength: 255
-    DescribeContainerInput:
-      type: object
-      title: DescribeContainerInput
-      properties:
-        ContainerName:
-          allOf:
-          - $ref: '#/components/schemas/ContainerName'
-          - description: The name of the container to query.
-    ContainerNotFoundException: {}
-    Endpoint:
-      type: string
-      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
-      minLength: 1
-      maxLength: 255
-    InternalServerError: {}
-    TimeStamp:
-      type: string
-      format: date-time
     Container:
       type: object
       properties:
@@ -269,8 +270,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -287,14 +288,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string

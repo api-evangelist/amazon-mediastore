@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2017-09-01
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetMetricPolicy #X Amz Target=MediaStore 20170901.GetMetricPolicy #X Amz Target=MediaStore 20170901.GetMetricPolicy API'
-  description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore…'
+  description: An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/mediastore-2017-09-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: GetMetricPolicy
-      description: 'Returns the metric policy for the specified container. '
+      description: Returns the metric policy for the specified container.
       responses:
         '200':
           description: Success
@@ -205,16 +206,18 @@ paths:
       - '#X Amz Target=MediaStore 20170901.GetMetricPolicy'
 components:
   schemas:
+    ContainerNotFoundException: {}
+    ObjectGroup:
+      type: string
+      pattern: /?(?:[A-Za-z0-9_=:\.\-\~\*]+/){0,10}(?:[A-Za-z0-9_=:\.\-\~\*]+)?/?
+      minLength: 1
+      maxLength: 900
     ContainerName:
       type: string
       pattern: '[\w-]+'
       minLength: 1
       maxLength: 255
-    ContainerLevelMetrics:
-      type: string
-      enum:
-      - ENABLED
-      - DISABLED
+    ContainerInUseException: {}
     MetricPolicy:
       type: object
       required:
@@ -229,12 +232,41 @@ components:
           - $ref: '#/components/schemas/MetricPolicyRules'
           - description: A parameter that holds an array of rules that enable metrics at the object level. This parameter is optional, but if you choose to include it, you must also include at least one rule. By default, you can include up to five rules. You can also <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas">request a quota increase</a> to allow up to 300 rules per policy.
       description: <p>The metric policy that is associated with the container. A metric policy allows AWS Elemental MediaStore to send metrics to Amazon CloudWatch. In the policy, you must indicate whether you want MediaStore to send container-level metrics. You can also include rules to define groups of objects that you want MediaStore to send object-level metrics for.</p> <p>To view examples of how to construct a metric policy for your use case, see <a href="https://docs.aws.amazon.com/mediastore/latest/ug/policies-metric-examples.html">Example Metric Policies</a>.</p>
+    ContainerLevelMetrics:
+      type: string
+      enum:
+      - ENABLED
+      - DISABLED
+    GetMetricPolicyInput:
+      type: object
+      required:
+      - ContainerName
+      title: GetMetricPolicyInput
+      properties:
+        ContainerName:
+          allOf:
+          - $ref: '#/components/schemas/ContainerName'
+          - description: The name of the container that is associated with the metric policy.
     ObjectGroupName:
       type: string
       pattern: '[a-zA-Z0-9_]+'
       minLength: 1
       maxLength: 30
-    ContainerInUseException: {}
+    GetMetricPolicyOutput:
+      type: object
+      required:
+      - MetricPolicy
+      properties:
+        MetricPolicy:
+          allOf:
+          - $ref: '#/components/schemas/MetricPolicy'
+          - description: The metric policy that is associated with the specific container.
+    MetricPolicyRules:
+      type: array
+      items:
+        $ref: '#/components/schemas/MetricPolicyRule'
+      minItems: 1
+      maxItems: 300
     MetricPolicyRule:
       type: object
       required:
@@ -250,60 +282,17 @@ components:
           - $ref: '#/components/schemas/ObjectGroupName'
           - description: A name that allows you to refer to the object group.
       description: A setting that enables metrics at the object level. Each rule contains an object group and an object group name. If the policy includes the MetricPolicyRules parameter, you must include at least one rule. Each metric policy can include up to five rules by default. You can also <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas">request a quota increase</a> to allow up to 300 rules per policy.
-    GetMetricPolicyOutput:
-      type: object
-      required:
-      - MetricPolicy
-      properties:
-        MetricPolicy:
-          allOf:
-          - $ref: '#/components/schemas/MetricPolicy'
-          - description: The metric policy that is associated with the specific container.
     InternalServerError: {}
-    GetMetricPolicyInput:
-      type: object
-      required:
-      - ContainerName
-      title: GetMetricPolicyInput
-      properties:
-        ContainerName:
-          allOf:
-          - $ref: '#/components/schemas/ContainerName'
-          - description: The name of the container that is associated with the metric policy.
     PolicyNotFoundException: {}
-    MetricPolicyRules:
-      type: array
-      items:
-        $ref: '#/components/schemas/MetricPolicyRule'
-      minItems: 1
-      maxItems: 300
-    ObjectGroup:
-      type: string
-      pattern: /?(?:[A-Za-z0-9_=:\.\-\~\*]+/){0,10}(?:[A-Za-z0-9_=:\.\-\~\*]+)?/?
-      minLength: 1
-      maxLength: 900
-    ContainerNotFoundException: {}
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
     X-Amz-Signature:
       name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -320,8 +309,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

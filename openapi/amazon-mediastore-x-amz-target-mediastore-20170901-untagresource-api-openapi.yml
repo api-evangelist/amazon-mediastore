@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2017-09-01
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.UntagResource #X Amz Target=MediaStore 20170901.UntagResource #X Amz Target=MediaStore 20170901.UntagResource API'
-  description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore…'
+  description: An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/mediastore-2017-09-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: UntagResource
-      description: 'Removes tags from the specified container. You can specify one or more tags to remove. '
+      description: Removes tags from the specified container. You can specify one or more tags to remove.
       responses:
         '200':
           description: Success
@@ -193,11 +194,12 @@ paths:
       - '#X Amz Target=MediaStore 20170901.UntagResource'
 components:
   schemas:
-    ContainerARN:
+    ContainerNotFoundException: {}
+    TagKey:
       type: string
-      pattern: arn:aws:mediastore:[a-z]+-[a-z]+-\d:\d{12}:container/[\w-]{1,255}
+      pattern: '[\p{L}\p{Z}\p{N}_.:/=+\-@]*'
       minLength: 1
-      maxLength: 1024
+      maxLength: 128
     UntagResourceInput:
       type: object
       required:
@@ -213,36 +215,35 @@ components:
           allOf:
           - $ref: '#/components/schemas/TagKeyList'
           - description: A comma-separated list of keys for tags that you want to remove from the container. For example, if your container has two tags (customer:CompanyA and priority:High) and you want to remove one of the tags (priority:High), you specify the key for the tag that you want to remove (priority).
-    ContainerInUseException: {}
-    TagKeyList:
-      type: array
-      items:
-        $ref: '#/components/schemas/TagKey'
-    ContainerNotFoundException: {}
     UntagResourceOutput:
       type: object
       properties: {}
     InternalServerError: {}
-    TagKey:
+    TagKeyList:
+      type: array
+      items:
+        $ref: '#/components/schemas/TagKey'
+    ContainerARN:
       type: string
-      pattern: '[\p{L}\p{Z}\p{N}_.:/=+\-@]*'
+      pattern: arn:aws:mediastore:[a-z]+-[a-z]+-\d:\d{12}:container/[\w-]{1,255}
       minLength: 1
-      maxLength: 128
+      maxLength: 1024
+    ContainerInUseException: {}
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Algorithm:
       name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -259,14 +260,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string

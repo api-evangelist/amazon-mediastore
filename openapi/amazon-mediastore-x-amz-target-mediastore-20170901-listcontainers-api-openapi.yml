@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2017-09-01
   x-release: v4
-  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.ListContainers #X Amz Target=MediaStore 20170901.ListContainers #X Amz Target=MediaStore 20170901.ListContainers API'
-  description: 'An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects. '
+  title: 'AWS Elemental MediaStore #X Amz Target=MediaStore…'
+  description: An AWS Elemental MediaStore container is a namespace that holds folders and objects. You use a container endpoint to create, read, and delete objects.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/mediastore-2017-09-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,13 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: ListContainers
-      description: <p>Lists the properties of all containers in AWS Elemental MediaStore. </p> <p>You can query to receive all the containers in one response. Or you can include the <code>MaxResults</code> parameter to receive a limited number of containers in each response. In this case, the response includes a token. To get the next set of containers, send the command again, this time with the <code>NextToken</code> parameter (with the returned token as its value). The next set of responses appears, with a token if there are still more containers to receive. </p> <p>See also <a>DescribeContainer</a>, which gets the properties of one container. </p>
+      description: 'Lists the properties of all containers in AWS Elemental MediaStore.
+
+
+        You can query to receive all the containers in one response. Or you can include the MaxResults parameter to receive a limited number of containers in each response. In this case, the response includes a token. To get the next set of containers, send the command again, this time with the NextToken parameter (with the returned token as its value). The next set of responses appears, with a token if there are still more containers to receive.
+
+
+        See also DescribeContainer, which gets the properties of one container.'
       responses:
         '200':
           description: Success
@@ -185,36 +192,32 @@ paths:
       - '#X Amz Target=MediaStore 20170901.ListContainers'
 components:
   schemas:
-    ContainerStatus:
-      type: string
-      enum:
-      - ACTIVE
-      - CREATING
-      - DELETING
-      minLength: 1
-      maxLength: 16
+    ContainerList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Container'
+    ContainerListLimit:
+      type: integer
+      minimum: 1
+      maximum: 100
+    ListContainersOutput:
+      type: object
+      required:
+      - Containers
+      properties:
+        Containers:
+          allOf:
+          - $ref: '#/components/schemas/ContainerList'
+          - description: The names of the containers.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: ' <code>NextToken</code> is the token to use in the next call to <code>ListContainers</code>. This token is returned only if you included the <code>MaxResults</code> tag in the original command, and only if there are still containers to return. '
     ContainerName:
       type: string
       pattern: '[\w-]+'
       minLength: 1
       maxLength: 255
-    ContainerAccessLoggingEnabled:
-      type: boolean
-    PaginationToken:
-      type: string
-      pattern: '[0-9A-Za-z=/+]+'
-      minLength: 1
-      maxLength: 1024
-    ContainerListLimit:
-      type: integer
-      minimum: 1
-      maximum: 100
-    Endpoint:
-      type: string
-      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
-      minLength: 1
-      maxLength: 255
-    InternalServerError: {}
     Container:
       type: object
       properties:
@@ -243,11 +246,8 @@ components:
           - $ref: '#/components/schemas/ContainerAccessLoggingEnabled'
           - description: The state of access logging on the container. This value is <code>false</code> by default, indicating that AWS Elemental MediaStore does not send access logs to Amazon CloudWatch Logs. When you enable access logging on the container, MediaStore changes this value to <code>true</code>, indicating that the service delivers access logs for objects stored in that container to CloudWatch Logs.
       description: This section describes operations that you can perform on an AWS Elemental MediaStore container.
-    ContainerARN:
-      type: string
-      pattern: arn:aws:mediastore:[a-z]+-[a-z]+-\d:\d{12}:container/[\w-]{1,255}
-      minLength: 1
-      maxLength: 1024
+    ContainerAccessLoggingEnabled:
+      type: boolean
     TimeStamp:
       type: string
       format: date-time
@@ -263,44 +263,39 @@ components:
           allOf:
           - $ref: '#/components/schemas/ContainerListLimit'
           - description: 'Enter the maximum number of containers in the response. Use from 1 to 255 characters. '
-    ContainerList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Container'
-    ListContainersOutput:
-      type: object
-      required:
-      - Containers
-      properties:
-        Containers:
-          allOf:
-          - $ref: '#/components/schemas/ContainerList'
-          - description: The names of the containers.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: ' <code>NextToken</code> is the token to use in the next call to <code>ListContainers</code>. This token is returned only if you included the <code>MaxResults</code> tag in the original command, and only if there are still containers to return. '
+    ContainerStatus:
+      type: string
+      enum:
+      - ACTIVE
+      - CREATING
+      - DELETING
+      minLength: 1
+      maxLength: 16
+    PaginationToken:
+      type: string
+      pattern: '[0-9A-Za-z=/+]+'
+      minLength: 1
+      maxLength: 1024
+    ContainerARN:
+      type: string
+      pattern: arn:aws:mediastore:[a-z]+-[a-z]+-\d:\d{12}:container/[\w-]{1,255}
+      minLength: 1
+      maxLength: 1024
+    InternalServerError: {}
+    Endpoint:
+      type: string
+      pattern: '[\u0009\u000A\u000D\u0020-\u00FF]+'
+      minLength: 1
+      maxLength: 255
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
     X-Amz-Signature:
       name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -317,8 +312,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
