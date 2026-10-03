@@ -6,9 +6,7 @@
   "outputs": [
     "amazon-mediastore-aws-elemental-mediastore-api-openapi.yml"
   ],
-  "archived": [
-    "deleted 21 superseded output(s) from the previous generation"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -36,30 +34,9 @@
     "amazon-mediastore-openapi-original.yml: tagged paths POST /#X-Amz-Target=MediaStore_20170901.TagResource -> AWS Elemental MediaStore",
     "amazon-mediastore-openapi-original.yml: tagged paths POST /#X-Amz-Target=MediaStore_20170901.UntagResource -> AWS Elemental MediaStore",
     "amazon-mediastore-openapi-original.yml: declared missing tag: AWS Elemental MediaStore",
-    "superseded outputs removed: amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api-openapi.yml, amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api-openapi.yml, amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api-openapi.yml, amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api-openapi.yml, amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api-openapi.yml \u2026",
-    "apis.yml register: written (+1 apis, 1 total)"
+    "apis.yml register: already-registered"
   ],
   "skipped": [
-    "amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+    "amazon-mediastore-aws-elemental-mediastore-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]
 }
