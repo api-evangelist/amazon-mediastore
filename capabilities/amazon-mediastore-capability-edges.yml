@@ -1,0 +1,26 @@
+slug: amazon-mediastore
+provider: Amazon MediaStore
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 1
+edges:
+- tag: AWS Elemental MediaStore
+  spec_file: amazon-mediastore-aws-elemental-mediastore-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.78
+  evidence: '"An AWS Elemental MediaStore container is a namespace that holds folders and objects. You
+    use a container endpoint to create, read, and delete objects"; CreateContainer, PutLifecyclePolicy,
+    StartAccessLogging'
+  reason: Cloud object-storage service provisioning and policy administration — infrastructure (storage)
+    management, not media/content business capability.

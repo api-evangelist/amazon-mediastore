@@ -61,6 +61,9 @@ apis:
   - type: FAQ
     url: https://aws.amazon.com/mediastore/faqs/
 common:
+- type: CapabilityMap
+  url: capabilities/amazon-mediastore-capability-edges.yml
+  name: Amazon MediaStore Business Capability Map
 - type: Website
   url: https://amazon.com
 - type: PostmanWorkspace
