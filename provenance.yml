@@ -9,132 +9,135 @@ artifacts:
   authentication/amazon-mediastore-authentication.yml:
     method: derived
     evidence: declared in the artifact
+  capabilities/amazon-mediastore-capability-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   examples/mediastore-api-allowed-headers-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -873,127 +876,7 @@ artifacts:
   json-structure/mediastore-api-untag-resource-output-structure.json:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T064009.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -1071,139 +954,94 @@ artifacts:
   kin/score-2026-09-24T064009.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/_original/amazon-mediastore-openapi-original.yml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api-openapi.yml:
+  openapi/amazon-mediastore-aws-elemental-mediastore-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/amazon-mediastore-plans-pricing.yml:
     method: generated
     evidence: declared in the artifact
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   rate-limits/amazon-mediastore-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
