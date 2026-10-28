@@ -1,4 +1,4 @@
-# Amazon MediaStore (amazon-mediastore)
+# Amazon MediaStore
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,129 +64,225 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
 AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency, and low latency required to deliver live streaming video content at scale.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/amazon-mediastore/refs/heads/main/apis.yml)
+**Areas:** AWS · Broadcasting · Media Processing · Media · Defunct
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Amazon MediaStore on APIs.io (historical record)
 
-## Tags:
+Everything profiled for Amazon MediaStore is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-mediastore/](https://apis.io/providers/amazon-mediastore/)** — or go straight to one of the APIs or properties below.
 
- - AWS, Broadcasting, Media Processing, Media
+### APIs (1)
 
-## Timestamps
+- [Amazon MediaStore AWS Elemental MediaStore API](https://apis.io/apis/amazon-mediastore/amazon-mediastore-aws-elemental-mediastore-api/) — The AWS Elemental MediaStore API from Amazon MediaStore — 21 operation(s) for aws elemental mediastore.
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Amazon MediaStore API
-AWS Elemental MediaStore is an AWS storage service optimized for media, providing the performance, consistency, and low latency required to deliver live streaming video content at scale.
+#### Agentic access (1)
 
-**Human URL:** [https://aws.amazon.com/mediastore/](https://aws.amazon.com/mediastore/)
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags:
+- [Amazon Mediastore Agentic Access](https://apis.io/agentic-access/amazon-mediastore/amazon-mediastore-agentic-access/)
 
- - Broadcasting, Media Processing, Media
+#### JSON Schema (81)
 
-#### Properties
+The data models the API reads and writes.
 
+- [AllowedHeaders](https://apis.io/schemas/amazon-mediastore/mediastore-api-allowed-headers/)
+- [AllowedMethods](https://apis.io/schemas/amazon-mediastore/mediastore-api-allowed-methods/)
+- [AllowedOrigins](https://apis.io/schemas/amazon-mediastore/mediastore-api-allowed-origins/)
+- [Container](https://apis.io/schemas/amazon-mediastore/mediastore-api-container/)
+- [ContainerAccessLoggingEnabled](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-access-logging-enabled/)
+- [ContainerARN](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-arn/)
+- [ContainerInUseException](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-in-use-exception/)
+- [ContainerLevelMetrics](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-level-metrics/)
+- [ContainerList](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-list/)
+- [ContainerListLimit](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-list-limit/)
+- [ContainerName](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-name/)
+- [ContainerNotFoundException](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-not-found-exception/)
+- [ContainerPolicy](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-policy/)
+- [ContainerStatus](https://apis.io/schemas/amazon-mediastore/mediastore-api-container-status/)
+- [CorsPolicy](https://apis.io/schemas/amazon-mediastore/mediastore-api-cors-policy/)
+- [CorsPolicyNotFoundException](https://apis.io/schemas/amazon-mediastore/mediastore-api-cors-policy-not-found-exception/)
+- [CorsRule](https://apis.io/schemas/amazon-mediastore/mediastore-api-cors-rule/)
+- [CreateContainerInput](https://apis.io/schemas/amazon-mediastore/mediastore-api-create-container-input/)
+- [CreateContainerOutput](https://apis.io/schemas/amazon-mediastore/mediastore-api-create-container-output/)
+- [DeleteContainerInput](https://apis.io/schemas/amazon-mediastore/mediastore-api-delete-container-input/)
+- [DeleteContainerOutput](https://apis.io/schemas/amazon-mediastore/mediastore-api-delete-container-output/)
+- [DeleteContainerPolicyInput](https://apis.io/schemas/amazon-mediastore/mediastore-api-delete-container-policy-input/)
+- [DeleteContainerPolicyOutput](https://apis.io/schemas/amazon-mediastore/mediastore-api-delete-container-policy-output/)
+- [DeleteCorsPolicyInput](https://apis.io/schemas/amazon-mediastore/mediastore-api-delete-cors-policy-input/)
+- [DeleteCorsPolicyOutput](https://apis.io/schemas/amazon-mediastore/mediastore-api-delete-cors-policy-output/)
+- …and 56 more published on APIs.io
+
+#### JSON Structure (81)
+
+Data models expressed in JSON Structure.
+
+- [Mediastore Api Allowed Headers Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-allowed-headers-structure/)
+- [Mediastore Api Allowed Methods Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-allowed-methods-structure/)
+- [Mediastore Api Allowed Origins Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-allowed-origins-structure/)
+- [Mediastore Api Container Access Logging Enabled Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-access-logging-enabled-structure/)
+- [Mediastore Api Container Arn Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-arn-structure/)
+- [Mediastore Api Container In Use Exception Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-in-use-exception-structure/)
+- [Mediastore Api Container Level Metrics Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-level-metrics-structure/)
+- [Mediastore Api Container List Limit Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-list-limit-structure/)
+- [Mediastore Api Container List Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-list-structure/)
+- [Mediastore Api Container Name Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-name-structure/)
+- [Mediastore Api Container Not Found Exception Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-not-found-exception-structure/)
+- [Mediastore Api Container Policy Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-policy-structure/)
+- [Mediastore Api Container Status Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-status-structure/)
+- [Mediastore Api Container Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-container-structure/)
+- [Mediastore Api Cors Policy Not Found Exception Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-cors-policy-not-found-exception-structure/)
+- [Mediastore Api Cors Policy Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-cors-policy-structure/)
+- [Mediastore Api Cors Rule Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-cors-rule-structure/)
+- [Mediastore Api Create Container Input Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-create-container-input-structure/)
+- [Mediastore Api Create Container Output Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-create-container-output-structure/)
+- [Mediastore Api Delete Container Input Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-delete-container-input-structure/)
+- [Mediastore Api Delete Container Output Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-delete-container-output-structure/)
+- [Mediastore Api Delete Container Policy Input Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-delete-container-policy-input-structure/)
+- [Mediastore Api Delete Container Policy Output Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-delete-container-policy-output-structure/)
+- [Mediastore Api Delete Cors Policy Input Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-delete-cors-policy-input-structure/)
+- [Mediastore Api Delete Cors Policy Output Structure](https://apis.io/json-structure/amazon-mediastore/mediastore-api-delete-cors-policy-output-structure/)
+- …and 56 more published on APIs.io
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Amazon Mediastore Mediastore Api Context](https://apis.io/jsonld/amazon-mediastore/amazon-mediastore-mediastore-api-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Amazon Mediastore Vocabulary](https://apis.io/vocabularies/amazon-mediastore/amazon-mediastore-vocabulary/)
+
+#### Examples (81)
+
+Example requests and responses.
+
+- [Mediastore Api Allowed Headers Example](https://apis.io/examples/amazon-mediastore/mediastore-api-allowed-headers-example/)
+- [Mediastore Api Allowed Methods Example](https://apis.io/examples/amazon-mediastore/mediastore-api-allowed-methods-example/)
+- [Mediastore Api Allowed Origins Example](https://apis.io/examples/amazon-mediastore/mediastore-api-allowed-origins-example/)
+- [Mediastore Api Container Access Logging Enabled Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-access-logging-enabled-example/)
+- [Mediastore Api Container Arn Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-arn-example/)
+- [Mediastore Api Container Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-example/)
+- [Mediastore Api Container In Use Exception Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-in-use-exception-example/)
+- [Mediastore Api Container Level Metrics Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-level-metrics-example/)
+- [Mediastore Api Container List Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-list-example/)
+- [Mediastore Api Container List Limit Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-list-limit-example/)
+- [Mediastore Api Container Name Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-name-example/)
+- [Mediastore Api Container Not Found Exception Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-not-found-exception-example/)
+- [Mediastore Api Container Policy Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-policy-example/)
+- [Mediastore Api Container Status Example](https://apis.io/examples/amazon-mediastore/mediastore-api-container-status-example/)
+- [Mediastore Api Cors Policy Example](https://apis.io/examples/amazon-mediastore/mediastore-api-cors-policy-example/)
+- [Mediastore Api Cors Policy Not Found Exception Example](https://apis.io/examples/amazon-mediastore/mediastore-api-cors-policy-not-found-exception-example/)
+- [Mediastore Api Cors Rule Example](https://apis.io/examples/amazon-mediastore/mediastore-api-cors-rule-example/)
+- [Mediastore Api Create Container Input Example](https://apis.io/examples/amazon-mediastore/mediastore-api-create-container-input-example/)
+- [Mediastore Api Create Container Output Example](https://apis.io/examples/amazon-mediastore/mediastore-api-create-container-output-example/)
+- [Mediastore Api Delete Container Input Example](https://apis.io/examples/amazon-mediastore/mediastore-api-delete-container-input-example/)
+- [Mediastore Api Delete Container Output Example](https://apis.io/examples/amazon-mediastore/mediastore-api-delete-container-output-example/)
+- [Mediastore Api Delete Container Policy Input Example](https://apis.io/examples/amazon-mediastore/mediastore-api-delete-container-policy-input-example/)
+- [Mediastore Api Delete Container Policy Output Example](https://apis.io/examples/amazon-mediastore/mediastore-api-delete-container-policy-output-example/)
+- [Mediastore Api Delete Cors Policy Input Example](https://apis.io/examples/amazon-mediastore/mediastore-api-delete-cors-policy-input-example/)
+- [Mediastore Api Delete Cors Policy Output Example](https://apis.io/examples/amazon-mediastore/mediastore-api-delete-cors-policy-output-example/)
+- …and 56 more published on APIs.io
+
+#### Collections (42)
+
+Postman and Open Collection request collections.
+
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteContainer API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteContainerPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteCorsPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteLifecyclePolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-deletelifecyclepolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteMetricPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-deletemetricpolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DescribeContainer API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-describecontainer-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetContainerPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-getcontainerpolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetCorsPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-getcorspolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetLifecyclePolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-getlifecyclepolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.GetMetricPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-getmetricpolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.ListContainers API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-listcontainers-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.ListTagsForResource API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-listtagsforresource-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.PutContainerPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-putcontainerpolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.PutCorsPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-putcorspolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.PutLifecyclePolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-putlifecyclepolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.PutMetricPolicy API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-putmetricpolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.StartAccessLogging API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-startaccesslogging-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.StopAccessLogging API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-stopaccesslogging-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.TagResource API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-tagresource-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.UntagResource API](https://apis.io/collections/amazon-mediastore/open-amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer API](https://apis.io/collections/amazon-mediastore/postman-amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteContainer API](https://apis.io/collections/amazon-mediastore/postman-amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainer-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteContainerPolicy API](https://apis.io/collections/amazon-mediastore/postman-amazon-mediastore-x-amz-target-mediastore-20170901-deletecontainerpolicy-api/)
+- [AWS Elemental MediaStore #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.CreateContainer #X Amz Target=MediaStore 20170901.DeleteCorsPolicy API](https://apis.io/collections/amazon-mediastore/postman-amazon-mediastore-x-amz-target-mediastore-20170901-deletecorspolicy-api/)
+- …and 17 more published on APIs.io
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Amazon MediaStore — jsonschema rules](https://apis.io/rules/amazon-mediastore/amazon-mediastore-jsonschema-spectral-rules/)
+- [Amazon MediaStore API Rules](https://apis.io/rules/amazon-mediastore/amazon-mediastore-spectral-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon Mediastore Authentication](https://apis.io/security/amazon-mediastore/amazon-mediastore-authentication/)
+- [Amazon Mediastore Domain Security](https://apis.io/security/amazon-mediastore/amazon-mediastore-domain-security/)
+- [Amazon Mediastore Trust Center](https://apis.io/security/amazon-mediastore/amazon-mediastore-trust-center/)
+- [Amazon Mediastore Vulnerability Disclosure](https://apis.io/security/amazon-mediastore/amazon-mediastore-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Amazon Mediastore Plans Pricing](https://apis.io/plans/amazon-mediastore/amazon-mediastore-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Amazon Mediastore Rate Limits](https://apis.io/rate-limits/amazon-mediastore/amazon-mediastore-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Amazon Mediastore Finops](https://apis.io/finops/amazon-mediastore/amazon-mediastore-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://amazon.com)
 - [Documentation](https://docs.aws.amazon.com/mediastore/)
-- [OpenAPI](openapi/amazon-mediastore-openapi-original.yml)
-- [GettingStarted](https://aws.amazon.com/mediastore/getting-started/)
-- [Pricing](https://aws.amazon.com/mediastore/pricing/)
-- [FAQ](https://aws.amazon.com/mediastore/faqs/)
-
-## Common Properties
-
-- [Portal](https://aws.amazon.com/mediastore/)
-- [Documentation](https://docs.aws.amazon.com/mediastore/)
-- [TermsOfService](https://aws.amazon.com/service-terms/)
-- [PrivacyPolicy](https://aws.amazon.com/privacy/)
 - [Support](https://aws.amazon.com/premiumsupport/)
 - [Blog](https://aws.amazon.com/blogs/media/)
-- [GitHubOrganization](https://github.com/aws)
-- [Console](https://console.aws.amazon.com/mediastore/)
-- [SignUp](https://portal.aws.amazon.com/billing/signup)
-- [StatusPage](https://health.aws.amazon.com/health/status)
-- [Contact](https://aws.amazon.com/contact-us/)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| High-Performance Media Storage | Optimized object storage for live video with consistent low-latency performance. |
-| Container and Object Management | Organize media assets in containers with fine-grained access control policies. |
-| CORS Support | Cross-origin resource sharing configuration for browser-based media players. |
-| Lifecycle Policies | Automatically expire and delete media objects based on age or other criteria. |
-| Access Logging | Detailed access logs for auditing and monitoring media storage activity. |
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
 
-## Use Cases
+## How this profile is made
 
-| Name | Description |
-|------|-------------|
-| Live Video Origin Storage | Use as a high-performance origin for live video workflows. |
-| Media Asset Management | Store and manage media files with low-latency access. |
-| Streaming Video Delivery | Serve HLS and DASH segments with consistent performance for video streaming. |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Integrations
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon MediaStore: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Name | Description |
-|------|-------------|
-| AWS Elemental MediaLive | Use MediaStore as an output destination for live encoded streams. |
-| Amazon CloudFront | Serve MediaStore content via CloudFront for global distribution. |
-| AWS IAM | Control access to MediaStore containers using IAM policies. |
-| Amazon CloudWatch | Monitor MediaStore request metrics and latency. |
+## Open an issue
 
-## Artifacts
-
-Machine-readable API specifications organized by format.
-
-### OpenAPI
-
-- [Amazon MediaStore OpenAPI](openapi/amazon-mediastore-openapi-original.yml)
-
-### JSON Schema
-
-- 81 schema files in [json-schema/](json-schema/)
-
-### JSON Structure
-
-- 81 structure files in [json-structure/](json-structure/)
-
-### JSON-LD
-
-- [Amazon MediaStore API Context](json-ld/amazon-mediastore-mediastore-api-context.jsonld)
-
-### Examples
-
-- 81 example files in [examples/](examples/)
-
-## Capabilities
-
-Naftiko capabilities organized as shared per-API definitions composed into customer-facing workflows.
-
-### Shared Per-API Definitions
-
-- [Amazon MediaStore](capabilities/shared/mediastore.yaml) — 21 operations for media processing
-
-### Workflow Capabilities
-
-| Workflow | APIs Combined | Tools | Persona |
-|----------|--------------|-------|---------|
-| [Amazon MediaStore Workflow](capabilities/amazon-mediastore-media-workflow.yaml) | Amazon MediaStore | 8 | Broadcast Engineer |
-
-## Vocabulary
-
-- [Amazon MediaStore Vocabulary](vocabulary/amazon-mediastore-vocabulary.yaml) — Unified taxonomy mapping resources, actions, workflows, and personas across operational (OpenAPI) and capability (Naftiko) dimensions
-
-## Rules
-
-- [Amazon MediaStore Spectral Rules](rules/amazon-mediastore-spectral-rules.yml) — 20 rules across 8 categories enforcing Amazon MediaStore API conventions
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-mediastore/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
