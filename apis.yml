@@ -30,7 +30,7 @@ accessModel:
   - plans
   - authentication
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-mediastore.png
 tags:
@@ -149,6 +149,16 @@ common:
     description: Control access to MediaStore containers using IAM policies.
   - name: Amazon CloudWatch
     description: Monitor MediaStore request metrics and latency.
+- type: UsageTerms
+  url: terms/amazon-mediastore-terms-of-service.yml
+- type: Attestations
+  url: compliance/amazon-mediastore-compliance.yml
+- type: Eligibility
+  url: eligibility/amazon-mediastore-eligibility.yml
+- type: AIPreferences
+  url: ai-preferences/amazon-mediastore-ai-preferences.yml
+- type: DataLicense
+  url: data-license/amazon-mediastore-data-license.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

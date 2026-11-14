@@ -5,10 +5,19 @@ artifacts:
   agentic-access/amazon-mediastore-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-mediastore-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/amazon-mediastore-authentication.yml:
     method: derived
     evidence: declared in the artifact
   capabilities/amazon-mediastore-capability-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
     method: unknown
     evidence: no authorship recorded
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-createcontainer-api.opencollection.json:
@@ -137,6 +146,15 @@ artifacts:
   collections/amazon-mediastore-x-amz-target-mediastore-20170901-untagresource-api.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
+  compliance/amazon-mediastore-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
+  data-license/amazon-mediastore-data-license.yml:
+    method: harvested
+    evidence: declared in the artifact
+  eligibility/amazon-mediastore-eligibility.yml:
+    method: harvested
+    evidence: declared in the artifact
   examples/mediastore-api-allowed-headers-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -884,7 +902,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -945,6 +963,9 @@ artifacts:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-11-02T082323.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   openapi/_original/amazon-mediastore-openapi-original.yml:
@@ -1040,6 +1061,9 @@ artifacts:
     evidence: declared in the artifact
   sla/amazon-mediastore-sla.yml:
     method: generated
+    evidence: declared in the artifact
+  terms/amazon-mediastore-terms-of-service.yml:
+    method: harvested
     evidence: declared in the artifact
   vocabulary/amazon-mediastore-vocabulary.yaml:
     method: unknown
